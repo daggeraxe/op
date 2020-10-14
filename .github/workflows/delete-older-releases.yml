@@ -1,9 +1,9 @@
-#======================================================
+#=======================================================================================================================
 # https://github.com/ophub/op
 # Description: Automatically delete older releases
 # Function: Delete older releases
 # Cron: min (0 - 59) / hour (0 - 23) / day of month (1 - 31) / month (1 - 12) / day of week (0 - 6)(Sunday - Saturday)
-#=====================================================
+#=======================================================================================================================
 
 name: Delete older releases
 
@@ -49,3 +49,4 @@ jobs:
         age: '15 day'
         skip-tags: true
         skip-recent: ${{ env.RELEASE_LASTEST }}
+
