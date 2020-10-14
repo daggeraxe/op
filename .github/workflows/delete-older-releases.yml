@@ -21,6 +21,7 @@ on:
 
 env:
   DELETE_RELEASE: true
+  DELETE_ARTIFACTS: true
   RELEASE_LASTEST: 15
 
 jobs:
@@ -41,3 +42,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Remove old artifacts
+      uses: c-hive/gha-remove-artifacts@v1
+      if: env.DELETE_ARTIFACTS == 'true'
+      with:
+        age: '15 day'
+        skip-tags: true
+        skip-recent: ${{ env.RELEASE_LASTEST }}
