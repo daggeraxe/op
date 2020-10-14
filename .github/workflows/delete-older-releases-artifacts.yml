@@ -15,14 +15,14 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/delete-older-releases.yml'
+      - '.github/workflows/delete-older-releases-artifacts.yml'
   schedule:
     - cron: '30 23 * * 0'
 
 env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
-  RELEASE_LASTEST: 15
+  RECENT_LASTEST: 15
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.DELETE_RELEASE == 'true'
       with:
-        keep_latest: ${{ env.RELEASE_LASTEST }}
+        keep_latest: ${{ env.RECENT_LASTEST }}
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -47,6 +47,5 @@ jobs:
       if: env.DELETE_ARTIFACTS == 'true'
       with:
         age: '15 day'
-        skip-tags: true
-        skip-recent: ${{ env.RELEASE_LASTEST }}
+        skip-recent: ${{ env.RECENT_LASTEST }}
 
