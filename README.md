@@ -105,16 +105,16 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   ├── s905x3                                        # s905x3 related (X96 Max Plus, HK1 Box) 
- │   │   ├── flippy
- │   │   │   └── phicomm-n1.img                        # Use Phicomm N1 firmware to build s905x3
- │   │   ├── make                                      # Build script for 905x3           
- │   │   └── README.md
- │   │
  │   ├── x64                                           # x64 related code files
  │   │   ├── .config            
  │   │   ├── diy-part1.sh            
  │   │   ├── diy-part2.sh
+ │   │   └── README.md
+ │   │
+ │   ├── s905x3                                        # s905x3 related (X96 Max Plus, HK1 Box) 
+ │   │   ├── flippy
+ │   │   │   └── phicomm-n1.img                        # Use Phicomm N1 firmware to build s905x3
+ │   │   ├── make                                      # Build script for 905x3           
  │   │   └── README.md
  │   │
  │   └── phicomm_n1                                    # PHICOMM N1 related code files
