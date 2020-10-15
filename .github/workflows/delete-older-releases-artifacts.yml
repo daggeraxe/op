@@ -48,4 +48,5 @@ jobs:
       with:
         age: '10 day'
         skip-recent: 12
+        skip-tags: true
 
