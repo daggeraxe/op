@@ -52,7 +52,7 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
 | UPLOAD_RELEASE | Upload firmware to release. Default true |
 | UPLOAD_COWTRANSFER | Upload the firmware to CowTransfer.com. Default false |
 | UPLOAD_WERANSFER | Upload the firmware to WeTransfer.com. Default failure |
-| RECENT_LASTEST | maximum retention days for release, artifacts and logs in GitHub Release and Actions |
+| RECENT_LASTEST | maximum retention days for release, artifacts and logs in GitHub Release and Actions. |
 | TZ | Time zone setting |
 | secrets.GITHUB_TOKEN | 1. Personal center: Settings → Developer settings → Personal access tokens → Generate new token ( Name: GITHUB_TOKEN, Select: public_repo, Copy GITHUB_TOKEN's Value ). 2. Op code center: Settings → Secrets → New secret ( Name: RELEASES_TOKEN, Value: Paste GITHUB_TOKEN's Value ). |
 
