@@ -46,6 +46,6 @@ jobs:
       uses: c-hive/gha-remove-artifacts@v1
       if: env.DELETE_ARTIFACTS == 'true'
       with:
-        age: '15 day'
-        skip-recent: ${{ env.RECENT_LASTEST }}
+        age: '10 day'
+        skip-recent: 12
 
