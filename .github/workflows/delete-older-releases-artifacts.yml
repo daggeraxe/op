@@ -42,10 +42,3 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Remove old artifacts
-      uses: c-hive/gha-remove-artifacts@v1
-      if: env.DELETE_ARTIFACTS == 'true'
-      with:
-        age: '${{ env.RECENT_LASTEST }} day'
-        skip-recent: ${{ env.RECENT_LASTEST }}
-
