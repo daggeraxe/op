@@ -22,7 +22,7 @@ on:
 env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
-  RECENT_LASTEST: 7
+  RECENT_LASTEST: 15
 
 jobs:
   build:
