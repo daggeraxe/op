@@ -78,7 +78,9 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
  │       ├── build-openwrt-x64.yml                     # Build X64 Virtual Machine firmware
  │       ├── build-openwrt-phicomm_n1.yml              # Build PHICOMM N1 firmware
- │       └── delete-older-releases.yml                 # Delete older releases
+ │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi R2S firmware
+ │       ├── build-openwrt-s905x3.yml                  # Build S905x3 firmware
+ │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
  │
  ├── router                                            # Related router Openwrt firmware codes 
  │   ├── linksys_wrt1900acs                            # Linksys WRT1900ACS related code files
