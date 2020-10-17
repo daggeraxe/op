@@ -113,7 +113,9 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  │   │
  │   ├── s905x3                                        # s905x3 related (X96 Max Plus, HK1 Box) 
  │   │   ├── flippy
- │   │   │   └── phicomm-n1.img                        # Use Phicomm N1 firmware to build s905x3
+ │       │   ├── phicomm_n1_firmware.img               # Phicomm N1 firmware (*.img)
+ │   │   │   └── or phicomm_n1_firmware.zip            # Phicomm N1 firmware (*.zip)
+ │   │   │
  │   │   ├── make                                      # Build script for 905x3           
  │   │   └── README.md
  │   │
@@ -143,7 +145,6 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  │       │       ├── boot-${flippy_version}.tar.gz
  │       │       ├── dtb-amlogic-${flippy_version}.tar.gz
  │       │       ├── modules-${flippy_version}.tar.gz
- │       │       │ 
  │       │       └── or ${flippy_file} E.g: N1_Openwrt_*.img
  │       │     
  │       └── install-program                           # Install to emmc for PHICOMM N1
