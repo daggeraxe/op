@@ -112,12 +112,11 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  │   │   └── README.md
  │   │
  │   ├── s905x3                                        # s905x3 related (X96 Max Plus, HK1 Box) 
- │   │   ├── flippy
- │       │   ├── phicomm_n1_firmware.img               # Phicomm N1 firmware (*.img)
- │   │   │   └── or phicomm_n1_firmware.zip            # Phicomm N1 firmware (*.zip)
- │   │   │
  │   │   ├── make                                      # Build script for 905x3           
- │   │   └── README.md
+ │   │   ├── README.md
+ │   │   └── flippy
+ │   │       ├── phicomm_n1_firmware.img               # Phicomm N1 firmware (*.img)
+ │   │       └── or phicomm_n1_firmware.zip            # Phicomm N1 firmware (*.zip)  
  │   │
  │   └── phicomm_n1                                    # PHICOMM N1 related code files
  │       ├── .config            
@@ -125,7 +124,6 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  │       ├── diy-part2.sh            
  │       ├── make                                      # Build script for PHICOMM N1
  │       ├── README.md
- │       │
  │       ├── armbian                                   # armbian related files
  │       │   ├── boot-common.tar.gz                    # Public startup file
  │       │   ├── firmware.tar.gz                       # armbian firmware
@@ -134,7 +132,6 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  │       │       │   └── ${kernel}                     # Various versions of the kernel folder
  │       │       │       ├── kernel.tar.gz
  │       │       │       └── modules.tar.gz
- │       │       │
  │       │       └── root                              # Add your custom files(ROOTFS Partition)
  │       │    
  │       ├── build_kernel                              # Build kernel for Phicomm-N1
