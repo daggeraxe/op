@@ -1,5 +1,4 @@
-![OPhub logo](/logo.png)
-
+![OPhub logo](/logo.svg)
 
 # OpenWrt Firmware
 
