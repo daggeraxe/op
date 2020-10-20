@@ -157,9 +157,6 @@ Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual 
  └── README.md                                         # Instructions for OP
    
 ```
-## Tips
-
-The code Fork comes from the code bases of authors such as coolsnowwolf, P3TERX, tuanqing & flippy, etc.  I only did a simple router adaptability debugging. For more advanced usage, please go to the original author's github to learn.
 
 ## Acknowledgments
 
