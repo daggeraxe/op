@@ -9,6 +9,7 @@ name: Build OpenWrt for x64
 
 on:
   repository_dispatch:
+  workflow_dispatch:
   release:
     types: published
   push:
