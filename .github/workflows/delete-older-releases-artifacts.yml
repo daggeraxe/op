@@ -9,6 +9,7 @@ name: Delete older releases artifacts
 
 on:
   repository_dispatch:
+  workflow_dispatch:
   release:
     types: published
   push:
