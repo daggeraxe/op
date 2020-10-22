@@ -31,7 +31,7 @@ sysupgrade -F -n -v FW_WRT1900ACSV2_2.0.3.201002_prod.img
 reboot
 ````
 
-## Usage
+## Compilation method
 
 - Select ***`Build OpenWrt for fouter`*** on the [Action](https://github.com/ophub/op/actions) page.
 - Click the ***`Run workflow`*** button.
