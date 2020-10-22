@@ -12,7 +12,7 @@ The latest version of the OpenWrt firmware is automatically compiled every Monda
 - [S905X3](https://github.com/ophub/op/tree/master/router/s905x3)
 - [x64](https://github.com/ophub/op/tree/master/router/x64)
 
-## Usage
+## Compilation method
 
 - Select ***`Build OpenWrt for fouter`*** on the [Action](https://github.com/ophub/op/actions) page.
 - Click the ***`Run workflow`*** button.
