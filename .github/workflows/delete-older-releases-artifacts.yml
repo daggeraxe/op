@@ -10,13 +10,18 @@ name: Delete older releases artifacts
 on:
   repository_dispatch:
   workflow_dispatch:
-  release:
-    types: published
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/delete-older-releases-artifacts.yml'
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  #release:
+    #types: published
+  #push:
+    #branches:
+      #- main
+    #paths:
+      #- '.github/workflows/delete-older-releases-artifacts.yml'
   schedule:
     - cron: '30 23 * * 0'
 
