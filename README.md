@@ -17,8 +17,7 @@ The latest version of the OpenWrt firmware is automatically compiled every Monda
 - Select ***`Build OpenWrt for fouter`*** on the [Action](https://github.com/ophub/op/actions) page.
 - Click the ***`Run workflow`*** button.
 
-
-* Related script usage instructions:
+## Related script usage instructions:
 
 There are currently two DIY scripts in the root directory of the warehouse: `diy-part1.sh`, `diy-part2.sh` and `.config`, which are executed before and after the update and installation of ` ./scripts/feeds update && ./scripts/feeds install `. You can write the instructions for modifying the source code into the script, such as modifying `the default IP , Host name, theme, add/remove software package...`, etc. If the additional software package has the same name as the existing software package in the OpenWrt source code, the software package with the same name in the Open­Wrt source code needs to be deleted, otherwise the packages in Open­Wrt will be compiled first. It will automatically traverse all files in the `package` directory when compiling.
 
@@ -28,7 +27,7 @@ Just put the `feeds.conf.default` file into the root directory of the warehouse,
 
 Set `SSH_ACTIONS: true` to use tmate to connect to the `GitHub Actions` virtual server environment. You can directly perform the `make menuconfig` operation to generate the compilation configuration, or any customized operation. After triggering the workflow, wait for the `SSH connection to Actions` step to be executed on the `Actions` page, and then the following three lines of messages will be displayed: 1.` To connect to this session copy-n-paste the following into a terminal or browser: `, 2.***` ssh Y26QenMRd@nyc1.tmate.io `***, 3.***` https://tmate.io/t/Y26QenMRd `***. Then copy the `SSH connection command` and paste it into `the terminal` for execution, or copy `the link` to open it in `the browser` and use `the web terminal`. enter the command: ***` cd openwrt && make menuconfig `*** for personalized configuration (The web terminal may encounter a black screen, just press ***`Ctrl+C`***). After completion, press the shortcut key ***` Ctrl+D `*** or execute the ***` exit `*** command to exit, and the subsequent compilation work will proceed automatically.
 
-* router/${firmware} Function description of related files in each firmware package:
+## router/${firmware} Function description of related files in each firmware package:
 
 | Folder/file name | Features |
 | ---- | ---- |
