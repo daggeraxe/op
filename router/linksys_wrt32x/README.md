@@ -31,7 +31,7 @@ sysupgrade -F -n -v FW_WRT32X_1.0.180404.58.img
 reboot
 ````
 
-## Usage
+## Compilation method
 
 - Select ***`Build OpenWrt for fouter`*** on the [Action](https://github.com/ophub/op/actions) page.
 - Click the ***`Run workflow`*** button.
