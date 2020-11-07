@@ -139,12 +139,17 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       │       └── root                              # Add your custom files(ROOTFS Partition)
  │       │    
  │       ├── build_kernel                              # Build kernel for Phicomm-N1 & S905x3-Boxs
- │       │   ├── make                                  # Kernel build script
+ │       │   ├── make_use_img.sh                       # Kernel build script use *.img file
+ │       │   ├── make_use_kernel.sh                    # Kernel build script use kernel files
  │       │   ├── README.md
  │       │   └── flippy
  │       │       ├── Armbian_*_Aml-s9xxx_buster*.img   # Use Flippy's Armbian*.img files
  │       │       ├── OR: N1_Openwrt*.img               # Use Flippy's N1_Openwrt.img files
- │       │       └── OR: S905x3_Openwrt*.img           # Use Flippy's S905x3_Openwrt*.img files
+ │       │       ├── OR: S905x3_Openwrt*.img           # Use Flippy's S905x3_Openwrt*.img files
+ │       │       │
+ │       │       ├── boot-${flippy_version}.tar.gz     # Use Flippy's boot*,dtb*,modules* files
+ │       │       ├── dtb-amlogic-${flippy_version}.tar.gz
+ │       │       └── modules-${flippy_version}.tar.gz
  │       │     
  │       └── install-program                           # Install openwrt firmware to emmc
  │           ├── Makefile            
