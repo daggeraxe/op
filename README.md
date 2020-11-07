@@ -147,9 +147,9 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       │       ├── OR: N1_Openwrt*.img               # Use Flippy's N1_Openwrt.img files
  │       │       ├── OR: S905x3_Openwrt*.img           # Use Flippy's S905x3_Openwrt*.img files
  │       │       │
- │       │       ├── boot-${flippy_version}.tar.gz     # Use Flippy's boot*,dtb*,modules* files
- │       │       ├── dtb-amlogic-${flippy_version}.tar.gz
- │       │       └── modules-${flippy_version}.tar.gz
+ │       │       ├── boot-*.tar.gz                     # Use Flippy's boot*,dtb*,modules* files
+ │       │       ├── dtb-amlogic-*.tar.gz
+ │       │       └── modules-*.tar.gz
  │       │     
  │       └── install-program                           # Install openwrt firmware to emmc
  │           ├── Makefile            
