@@ -26,11 +26,13 @@ The version update instructions record each important update point for everyone 
 | 2020.11.03 | All | UPDATE | ✩✩ | [.config](https://github.com/ophub/op/blob/main/router/x64/.config) | Several software packages such as lsblk are integrated by default when the firmware is compiled, which supports later use in firmware maintenance. |
 | 2020.11.01 | N1, S905x3 | ADD | ✩✩ | [s905x3-install.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-install.sh) | Added the function of writing emmc partition to s905x3 series boxes. |
 | - | N1, S905x3 | ADD | ✩✩ | [s905x3-update.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-update.sh) | Added the function of updating emmc partition firmware to s905x3 series boxes. |
-| 2020.10.25 | s905x3 | ADD | ✩✩ | [s905x3](https://github.com/ophub/op/tree/main/router/s905x3) | Add OpenWrt Firmware for S905x3 |
-| 2020.10.01 | NanoPi-R2S | ADD | ✩✩ | [NanoPi-R2S](https://github.com/ophub/op/tree/main/router/nanopi_r2s) | Add OpenWrt Firmware for NanoPi-R2S |
-| 2020.09.01 | Phicomm-N1 | ADD | ✩✩ | [Phicomm-N1](https://github.com/ophub/op/tree/main/router/phicomm_n1) | Add OpenWrt Firmware for Phicomm-N1 |
-| 2020.08.10 | Linksys | ADD | ✩✩ | [op](https://github.com/ophub/op/tree/main/router) | Add OpenWrt Firmware for Linksys WRT1900ACS, Linksys WRT3200ACM, Linksys WRT32X |
-| 2020.08.01 | x64 | ADD | ✩✩ | [op](https://github.com/ophub/op/tree/main/router) | Add OpenWrt Firmware for x64 |
+| 2020.10.25 | s905x3 | ADD | ✩✩ | [s905x3](https://github.com/ophub/op/tree/main/router/s905x3) | Add OpenWrt Firmware for S905x3. |
+| 2020.10.01 | NanoPi-R2S | ADD | ✩✩ | [NanoPi-R2S](https://github.com/ophub/op/tree/main/router/nanopi_r2s) | Add OpenWrt Firmware for NanoPi-R2S. |
+| 2020.09.01 | Phicomm-N1 | ADD | ✩✩ | [Phicomm-N1](https://github.com/ophub/op/tree/main/router/phicomm_n1) | Add OpenWrt Firmware for Phicomm-N1. |
+| 2020.08.10 | WRT32X | ADD | ✩✩ | [WRT32X](https://https://github.com/ophub/op/tree/main/router/linksys_wrt32x) | Add OpenWrt Firmware for Linksys WRT32X. |
+| 2020.08.10 | WRT3200ACM | ADD | ✩✩ | [WRT3200ACM](https://github.com/ophub/op/tree/main/router/linksys_wrt3200acm) | Add OpenWrt Firmware for Linksys WRT3200ACM. |
+| 2020.08.10 | WRT1900ACS | ADD | ✩✩ | [WRT1900ACS](https://github.com/ophub/op/tree/main/router/linksys_wrt1900acs) | Add OpenWrt Firmware for Linksys WRT1900ACS. |
+| 2020.08.01 | x64 | ADD | ✩✩ | [x64](https://github.com/ophub/op/tree/main/router/x64) | Add OpenWrt Firmware for x64. |
 | 2020.07.23 | - | ADD | ✩✩ | [op](https://github.com/ophub/op) | Open this Github. |
 
 
