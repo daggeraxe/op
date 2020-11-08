@@ -22,7 +22,7 @@ The version update instructions record each important update point for everyone 
 | - | Phicomm-N1, S905x3-Boxs | UPDATE | ✩✩ | [make_use_img.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/make_use_img.sh) | Add fuzzy matching function. When the version specified by the script is not found, other firmware will be searched from the flippy directory. Thus, you can directly put the kernel file you want to use into the flippy directory for extraction, without manually changing the relevant parameters each time. |
 | - | Phicomm-N1, S905x3-Boxs | UPDATE | ✩✩ | [make_use_kernel.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/make_use_kernel.sh) | Add fuzzy matching function. When the version specified by the script is not found, other firmware will be searched from the flippy directory. Thus, you can directly put the kernel file you want to use into the flippy directory for extraction, without manually changing the relevant parameters each time. |
 | 2020.11.01 | Phicomm-N1, S905x3-Boxs | ADD | ✩✩ | [s905x3-install.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-install.sh) | Added the function of writing emmc partition to s905x3 series boxes. |
-| - | Phicomm-N1, S905x3-Boxs | ADD | ✩✩ | [s905x3-install.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-install.sh) | Added the function of updating emmc partition firmware to s905x3 series boxes. |
+| - | Phicomm-N1, S905x3-Boxs | ADD | ✩✩ | [s905x3-update.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-update.sh) | Added the function of updating emmc partition firmware to s905x3 series boxes. |
 
 
 
