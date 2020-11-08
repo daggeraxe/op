@@ -2,7 +2,7 @@
 
 # OpenWrt Firmware
 
-The latest version of the OpenWrt firmware is automatically compiled every Monday, which can be downloaded in [Action](https://github.com/ophub/op/actions). Will be updated to latest in every Monday [Releases](https://github.com/ophub/op/releases). For detailed information about each firmware, please refer to the README.md file of each model. Some important update instructions can be found in [CHANGELOG.md](https://github.com/ophub/op/blob/main/CHANGELOG.md) documents. The currently supported router models are: 
+The latest version of the OpenWrt firmware is automatically compiled every Monday, which can be downloaded in [Action](https://github.com/ophub/op/actions). Will be updated to latest in every Monday [Releases](https://github.com/ophub/op/releases). For detailed information about each firmware, please refer to the README.md file of each model. Some important update instructions can be found in [CHANGELOG](https://github.com/ophub/op/blob/main/CHANGELOG.md) documents. The currently supported router models are: 
 
 - [Linksys WRT1900ACS](https://github.com/ophub/op/tree/master/router/linksys_wrt1900acs)
 - [Linksys WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
