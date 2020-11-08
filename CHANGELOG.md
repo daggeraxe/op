@@ -19,19 +19,27 @@ The version update instructions record each important update point for everyone 
 | - | Phicomm-N1, S905x3-Boxs | UPDATE | ✩✩ | [s905x3-install.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-install.sh) | Added that if the dtb file is missing during installation, the download path will be prompted. |
 
 
+| Date | Firmware | Types | Importance | Path | description |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | 2020.11.07 | Phicomm-N1, S905x3-Boxs | ADD | ✩✩ | [5.4.75](https://github.com/ophub/op/tree/main/router/phicomm_n1/armbian/phicomm-n1/kernel/5.4.75) | Add New kernel. |
 | - | Phicomm-N1, S905x3-Boxs | ADD | ✩✩ | [5.9.5](https://github.com/ophub/op/tree/main/router/phicomm_n1/armbian/phicomm-n1/kernel/5.9.5) | Add New kernel. |
 | - | Phicomm-N1, S905x3-Boxs | UPDATE | ✩✩ | [make_use_img.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/make_use_img.sh) | Add fuzzy matching function. When the version specified by the script is not found, other firmware will be searched from the flippy directory. Thus, you can directly put the kernel file you want to use into the flippy directory for extraction, without manually changing the relevant parameters each time. |
 | - | Phicomm-N1, S905x3-Boxs | UPDATE | ✩✩ | [make_use_kernel.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/make_use_kernel.sh) | Add fuzzy matching function. When the version specified by the script is not found, other firmware will be searched from the flippy directory. Thus, you can directly put the kernel file you want to use into the flippy directory for extraction, without manually changing the relevant parameters each time. |
 
 
+| Date | Firmware | Types | Importance | Path | description |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | 2020.11.05 | All firmware | UPDATE | ✩✩ | [build-openwrt-s905x3.yml](https://github.com/ophub/op/blob/main/.github/workflows/build-openwrt-s905x3.yml) | Use the environment variable GITHUB_REPOSITORY to replace ophub/op, so that fork users can call their own compiled phicomm-n1 firmware to compile the s905x3-boxs series firmware instead of pointing to the releases of this warehouse. |
-| 2020.11.05 | All firmware | UPDATE | ✩✩ | [test-build-phicomm_n1.yml](https://github.com/ophub/op/blob/main/.github/workflows/test-build-phicomm_n1.yml) | Use the environment variable GITHUB_REPOSITORY to replace ophub/op, so that fork users can call their own compiled phicomm-n1 firmware to compile the new version of the firmware instead of pointing to the releases in this warehouse. |
+| - | All firmware | UPDATE | ✩✩ | [test-build-phicomm_n1.yml](https://github.com/ophub/op/blob/main/.github/workflows/test-build-phicomm_n1.yml) | Use the environment variable GITHUB_REPOSITORY to replace ophub/op, so that fork users can call their own compiled phicomm-n1 firmware to compile the new version of the firmware instead of pointing to the releases in this warehouse. |
 
 
+| Date | Firmware | Types | Importance | Path | description |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | 2020.11.03 | All firmware | UPDATE | ✩✩ | [.config](https://github.com/ophub/op/blob/main/router/x64/.config) | Several software packages such as lsblk are integrated by default when the firmware is compiled, which supports later use in firmware maintenance. |
 
 
+| Date | Firmware | Types | Importance | Path | description |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | 2020.11.01 | Phicomm-N1, S905x3-Boxs | ADD | ✩✩ | [s905x3-install.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-install.sh) | Added the function of writing emmc partition to s905x3 series boxes. |
 | - | Phicomm-N1, S905x3-Boxs | ADD | ✩✩ | [s905x3-update.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/install-program/files/s905x3-update.sh) | Added the function of updating emmc partition firmware to s905x3 series boxes. |
 
