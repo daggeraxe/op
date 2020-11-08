@@ -10,6 +10,7 @@ The version update instructions record each important update point for everyone 
 - Firmware: Targeted OpenWrt firmware.
 
 | Date | Firmware | Types | Importance | Path | description |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | 2020.11.08 | Phicomm-N1, S905x3-Boxs | TOOL | 3 | [update_dtb.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/update_dtb.sh) | Update kernel.tar.xz files in the kernel directory with the latest dtb file. |
 | 2020.11.08 | Phicomm-N1, S905x3-Boxs | UPDATE | 1 | [make_use_img.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/make_use_img.sh) | When the kernel is extracted, if the file lacks a key *.dtb file, the supplement will be extracted from the dtb library. |
 | 2020.11.08 | Phicomm-N1, S905x3-Boxs | UPDATE | 1 | [make_use_kernel.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/make_use_kernel.sh) | When the kernel is extracted, if the file lacks a key *.dtb file, the supplement will be extracted from the dtb library. |
