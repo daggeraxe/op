@@ -131,6 +131,9 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── armbian                                   # armbian related files
  │       │   ├── boot-common.tar.gz                    # Public startup file
  │       │   ├── firmware.tar.gz                       # armbian firmware
+ │       │   ├── dtb-amlogic                           # Armbian*Aml-s9xxx*.img's *.dtb library
+ │       │   │   └── *.dtb                             # *.dtb files
+ │       │   │
  │       │   └── phicomm-n1
  │       │       ├── kernel                            # Custom kernel folder 
  │       │       │   └── ${kernel}                     # Various versions of the kernel folder
@@ -141,6 +144,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build_kernel                              # Build kernel for Phicomm-N1 & S905x3-Boxs
  │       │   ├── make_use_img.sh                       # Kernel build script use *.img file
  │       │   ├── make_use_kernel.sh                    # Kernel build script use kernel files
+ │       │   ├── update_dtb.sh                         # Update kernel.tar.xz to latest dtb files
  │       │   ├── README.md
  │       │   └── flippy
  │       │       ├── Armbian_*_Aml-s9xxx_buster*.img   # Use Flippy's Armbian*.img files
