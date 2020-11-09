@@ -11,6 +11,8 @@ The version update instructions record each important update point for everyone 
 
 | Date | Firmware | Types | Importance | Path | description |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2020.11.09 | S905x3 | UPDATE | ✩✩✩ | [make](https://github.com/ophub/op/blob/main/router/s905x3/make) | Independent configuration of s905x3, supporting configuration of files such as .config. The compilation script of phicomm-n1 is transplanted, and the -b parameter is added to support the simultaneous compilation of multiple firmwares. For example, ./make -d -b n1_x96. The -k parameter is expanded to support the simultaneous compilation of multiple kernels, such as ./make -d -k 5.4.60_5.9.5. |
+| 2020.11.09 | N1 | UPDATE | ✩✩✩ | [make](https://github.com/ophub/op/blob/main/router/phicomm_n1/make) | Add the -b parameter to support compiling multiple firmwares at the same time. For example, ./make -d -b n1_x96. The -k parameter is expanded to support the simultaneous compilation of multiple kernels, such as ./make -d -k 5.4.60_5.9.5. |
 | 2020.11.08 | N1, S905x3 | TOOL | ✩✩✩ | [dtb-amlogic](https://github.com/ophub/op/tree/main/router/phicomm_n1/armbian/dtb-amlogic) | The dtb library is added to facilitate the lack of corresponding boot files when compiling the firmware of related models with the old version of the kernel file. |
 | - | N1, S905x3 | TOOL | ✩✩✩ | [update_dtb.sh](https://github.com/ophub/op/blob/main/router/phicomm_n1/build_kernel/update_dtb.sh) | Update kernel.tar.xz files in the kernel directory with the latest dtb file. |
 | - | N1, S905x3 | UPDATE | ✩✩✩✩✩ | [kernel](https://github.com/ophub/op/tree/main/router/phicomm_n1/armbian/phicomm-n1/kernel) | Supplement the old version of the kernel with the latest dtb file. |
@@ -34,5 +36,4 @@ The version update instructions record each important update point for everyone 
 | 2020.08.10 | WRT1900ACS | ADD | ✩✩ | [WRT1900ACS](https://github.com/ophub/op/tree/main/router/linksys_wrt1900acs) | Add OpenWrt Firmware for Linksys WRT1900ACS. |
 | 2020.08.01 | x64 | ADD | ✩✩ | [x64](https://github.com/ophub/op/tree/main/router/x64) | Add OpenWrt Firmware for x64. |
 | 2020.07.23 | - | ADD | ✩ | [op](https://github.com/ophub/op) | Open this Github. |
-
 
