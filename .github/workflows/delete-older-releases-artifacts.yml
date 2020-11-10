@@ -23,7 +23,8 @@ on:
 env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
-  RECENT_LASTEST: 30
+  DELETE_DAY: 30
+  KEEP_NUMBER: 5
 
 jobs:
   build:
@@ -38,7 +39,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.DELETE_RELEASE == 'true'
       with:
-        keep_latest: ${{ env.RECENT_LASTEST }}
+        keep_latest: ${{ env.DELETE_DAY }}
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,6 +47,6 @@ jobs:
     - name: Delete workflow runs
       uses: ActionsRML/delete-workflow-runs@main
       with:
-        retain_days: 20
-        keep_minimum_runs: 3
+        retain_days: ${{ env.DELETE_DAY }}
+        keep_minimum_runs: ${{ env.KEEP_NUMBER }}
         
