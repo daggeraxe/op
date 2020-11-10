@@ -147,9 +147,9 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       │   ├── update_dtb.sh                         # Update kernel.tar.xz to latest dtb files
  │       │   ├── README.md
  │       │   └── flippy
- │       │       ├── Armbian*Aml-s9xxx*.img            # Use Flippy's Armbian*.img files
- │       │       ├── OR: N1_Openwrt*.img               # Use Flippy's N1_Openwrt.img files
+ │       │       ├── N1_Openwrt*.img                   # Recommend Use Flippy's N1_Openwrt.img files
  │       │       ├── OR: S905x3_Openwrt*.img           # Use Flippy's S905x3_Openwrt*.img files
+ │       │       ├── OR: Armbian*Aml-s9xxx*.img        # Use Flippy's Armbian*.img files
  │       │       │
  │       │       ├── boot-*.tar.gz                     # Use Flippy's boot*,dtb*,modules* files
  │       │       ├── dtb-amlogic-*.tar.gz
