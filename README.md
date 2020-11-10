@@ -115,12 +115,12 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   ├── s905x3                                        # s905x3 related (X96 Max Plus, HK1 Box) 
+ │   ├── s905x3                                        # s905x3 related (X96, HK1, H96...) 
+ │   │   ├── .config            
+ │   │   ├── diy-part1.sh            
+ │   │   ├── diy-part2.sh
  │   │   ├── make                                      # Build script for 905x3           
- │   │   ├── README.md
- │   │   └── flippy
- │   │       ├── phicomm_n1_firmware.img               # Phicomm N1 firmware (*.img)
- │   │       └── or phicomm_n1_firmware.zip            # Phicomm N1 firmware (*.zip)  
+ │   │   └── README.md 
  │   │
  │   └── phicomm_n1                                    # PHICOMM N1 related code files
  │       ├── .config            
