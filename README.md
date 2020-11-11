@@ -8,8 +8,8 @@ The latest version of the OpenWrt firmware is automatically compiled every Monda
 - [Linksys WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
 - [Linksys WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
 - [NanoPi R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
-- [Phicomm N1](https://github.com/ophub/op/tree/master/router/phicomm_n1)
-- [S905X3](https://github.com/ophub/op/tree/master/router/s905x3)
+- [Phicomm N1](https://github.com/ophub/op/tree/master/router/s905x3_phicomm-n1)
+- [S905X3](https://github.com/ophub/op/tree/master/router/s905x3_phicomm-n1)
 - [x64](https://github.com/ophub/op/tree/master/router/x64)
 
 ## Compilation method
@@ -105,28 +105,21 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │ 
  │   ├── nanopi_r2s                                    # NanoPi R2S related code files
  │   │   ├── .config            
- │   │   ├── diy-part1.sh            
+ │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
  │   ├── x64                                           # x64 related code files
  │   │   ├── .config            
- │   │   ├── diy-part1.sh            
+ │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   ├── s905x3                                        # s905x3 related (X96, HK1, H96...) 
- │   │   ├── .config            
- │   │   ├── diy-part1.sh            
- │   │   ├── diy-part2.sh
- │   │   ├── make                                      # Build script for 905x3           
- │   │   └── README.md 
- │   │
- │   └── phicomm_n1                                    # PHICOMM N1 related code files
+ │   └── s905x3_phicomm-n1                             # S905x3-Boxs & Phicomm-N1 related code files
  │       ├── .config            
- │       ├── diy-part1.sh            
- │       ├── diy-part2.sh            
- │       ├── make                                      # Build script for PHICOMM N1
+ │       ├── diy-part1.sh
+ │       ├── diy-part2.sh
+ │       ├── make                                      # Build script for S905x3-Boxs & Phicomm-N1
  │       ├── README.md
  │       ├── armbian                                   # armbian related files
  │       │   ├── boot-common.tar.gz                    # Public startup file
@@ -141,7 +134,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       │       │       └── modules.tar.gz
  │       │       └── root                              # Add your custom files(ROOTFS Partition)
  │       │    
- │       ├── build_kernel                              # Build kernel for Phicomm-N1 & S905x3-Boxs
+ │       ├── build_kernel                              # Build kernel for S905x3-Boxs & Phicomm-N1
  │       │   ├── make_use_img.sh                       # Kernel build script use *.img file
  │       │   ├── make_use_kernel.sh                    # Kernel build script use kernel files
  │       │   ├── update_dtb.sh                         # Update kernel.tar.xz to latest dtb files
