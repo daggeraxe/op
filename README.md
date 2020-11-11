@@ -79,9 +79,8 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build-openwrt-linksys_wrt3200acm.yml      # Build Linksys WRT3200ACM firmware
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
  │       ├── build-openwrt-x64.yml                     # Build X64 Virtual Machine firmware
- │       ├── build-openwrt-phicomm_n1.yml              # Build PHICOMM N1 firmware
- │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi R2S firmware
- │       ├── build-openwrt-s905x3.yml                  # Build S905x3 firmware
+ │       ├── build-openwrt-s905x3-phicomm_n1.yml       # Build S905x3 & Phicomm-N1 firmware
+ │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
  │
  ├── router                                            # Related router Openwrt firmware codes 
@@ -115,11 +114,11 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   └── s905x3_phicomm-n1                             # S905x3-Boxs & Phicomm-N1 related code files
+ │   └── s905x3_phicomm-n1                             # S905x3 & Phicomm-N1 related code files
  │       ├── .config
  │       ├── diy-part1.sh
  │       ├── diy-part2.sh
- │       ├── make                                      # Build script for S905x3-Boxs & Phicomm-N1
+ │       ├── make                                      # Build script for S905x3 & Phicomm-N1
  │       ├── README.md
  │       ├── armbian                                   # armbian related files
  │       │   ├── boot-common.tar.gz                    # Public startup file
@@ -134,13 +133,13 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       │       │       └── modules.tar.gz
  │       │       └── root                              # Add your custom files(ROOTFS Partition)
  │       │    
- │       ├── build_kernel                              # Build kernel for S905x3-Boxs & Phicomm-N1
+ │       ├── build_kernel                              # Build kernel for S905x3 & Phicomm-N1
  │       │   ├── make_use_img.sh                       # Kernel build script use *.img file
  │       │   ├── make_use_kernel.sh                    # Kernel build script use kernel files
  │       │   ├── update_dtb.sh                         # Update kernel.tar.xz to latest dtb files
  │       │   ├── README.md
  │       │   └── flippy
- │       │       ├── N1_Openwrt*.img                   # Recommend Use Flippy's N1_Openwrt.img files
+ │       │       ├── N1_Openwrt*.img                   # Recommend Use N1_Openwrt.img files
  │       │       ├── OR: S905x3_Openwrt*.img           # Use Flippy's S905x3_Openwrt*.img files
  │       │       ├── OR: Armbian*Aml-s9xxx*.img        # Use Flippy's Armbian*.img files
  │       │       │
