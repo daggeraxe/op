@@ -104,19 +104,19 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   └── README.md
  │   │ 
  │   ├── nanopi_r2s                                    # NanoPi R2S related code files
- │   │   ├── .config            
+ │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
  │   ├── x64                                           # x64 related code files
- │   │   ├── .config            
+ │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
  │   └── s905x3_phicomm-n1                             # S905x3-Boxs & Phicomm-N1 related code files
- │       ├── .config            
+ │       ├── .config
  │       ├── diy-part1.sh
  │       ├── diy-part2.sh
  │       ├── make                                      # Build script for S905x3-Boxs & Phicomm-N1
