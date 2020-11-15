@@ -11,6 +11,9 @@ The version update instructions record each important update point for everyone 
 
 | Date | Firmware | Types | Importance | Path | description |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2020.11.15 | All | UPDATE | ✩✩✩ | [sync-code.yml](https://github.com/ophub/op/blob/main/.github/workflows/sync-code.yml) | Added synchronization code script. |
+| 2020.11.14 | N1, S905x3 | ADD | ✩✩✩ | [5.9.8](https://github.com/ophub/op/tree/main/router/s905x3_phicomm-n1/armbian/phicomm-n1/kernel/5.9.8) | Add New kernel. |
+| 2020.11.14 | N1, S905x3 | ADD | ✩✩✩ | [5.7.7](https://github.com/ophub/op/tree/main/router/s905x3_phicomm-n1/armbian/phicomm-n1/kernel/5.7.7) | Add New kernel. |
 | 2020.11.13 | N1 | UPDATE | ✩✩✩ | [n1-update.sh](https://github.com/ophub/op/blob/main/router/s905x3_phicomm-n1/install-program/files/n1-update.sh) | Upgraded the Phicomm-N1 upgrade script, which supports booting from the USB hard disk to upgrade. |
 | 2020.11.12 | N1, S905x3 | UPDATE | ✩✩✩✩✩ | [make](https://github.com/ophub/op/blob/main/router/s905x3_phicomm-n1/make) | When the openwrt firmware is packaged, the auto-complete installation/update file and BootLoader file are added. |
 | 2020.11.11 | N1, S905x3 | UPDATE | ✩✩✩✩✩ | [s905x3_phicomm-n1](https://github.com/ophub/op/tree/main/router/s905x3_phicomm-n1) | Because s905x3 and phicomm-n1 have the same code, they are merged into one. Compiling a firmware separately can be specified in the parameter -b, such as `-b n1`. Multiple firmwares are compiled together and connected with underscore, such as `-b n1_x96_hk1`. |

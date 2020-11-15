@@ -81,6 +81,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build-openwrt-x64.yml                     # Build X64 Virtual Machine firmware
  │       ├── build-openwrt-s905x3-phicomm_n1.yml       # Build S905x3 & Phicomm-N1 firmware
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
+ │       ├── sync-code.yml                             # Keep the code in sync with op
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
  │
  ├── router                                            # Related router Openwrt firmware codes 
