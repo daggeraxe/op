@@ -57,6 +57,6 @@ jobs:
     - name: Push Commits
       env:
         DOWNSTREAM_BRANCH: main
-      run: git push origin $DOWNSTREAM_BRANCH
+      run: git push -u origin $DOWNSTREAM_BRANCH -f
       
       
