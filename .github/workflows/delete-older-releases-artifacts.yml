@@ -24,7 +24,7 @@ env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
   KEEP_DAY: 30
-  KEEP_NUMBER: 3
+  KEEP_NUMBER: 5
 
 jobs:
   build:
