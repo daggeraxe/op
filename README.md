@@ -7,10 +7,10 @@ The latest version of the OpenWrt firmware is automatically compiled every Monda
 - [Linksys WRT1900ACS](https://github.com/ophub/op/tree/master/router/linksys_wrt1900acs)
 - [Linksys WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
 - [Linksys WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
-- [NanoPi R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
-- [Phicomm N1](https://github.com/ophub/op/tree/master/router/s905x3_phicomm-n1)
-- [S905X3](https://github.com/ophub/op/tree/master/router/s905x3_phicomm-n1)
-- [x64](https://github.com/ophub/op/tree/master/router/x64)
+- [NanoPi-R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
+- [Phicomm-N1](https://github.com/ophub/op/tree/master/router/s905x3_phicomm-n1)
+- [S905x3](https://github.com/ophub/op/tree/master/router/s905x3_phicomm-n1)
+- [x86_64](https://github.com/ophub/op/tree/master/router/x64)
 
 ## Compilation method
 
@@ -78,7 +78,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build-openwrt-linksys_wrt1900acs.yml      # Build Linksys WRT1900ACS firmware
  │       ├── build-openwrt-linksys_wrt3200acm.yml      # Build Linksys WRT3200ACM firmware
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
- │       ├── build-openwrt-x64.yml                     # Build X64 Virtual Machine firmware
+ │       ├── build-openwrt-x86_64.yml                  # Build X86_64 Virtual Machine firmware
  │       ├── build-openwrt-s905x3-phicomm_n1.yml       # Build S905x3 & Phicomm-N1 firmware
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
@@ -108,7 +108,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   ├── x64                                           # x64 related code files
+ │   ├── x86_64                                        # x86_64 related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
