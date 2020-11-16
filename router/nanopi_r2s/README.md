@@ -1,6 +1,6 @@
 # OpenWrt for NanoPi R2S
 
-You can download the OpwnWrt for NanoPi R2S firmware from [Actions](https://github.com/ophub/op/actions). Such as, ` Build OpenWrt for NanoPi R2S `, Unzip to get the `***.img` file. Or download from [Releases](https://github.com/ophub/op/releases). Such as `OpenWrt_NanoPi_R2S_${date}`.
+You can download the OpwnWrt for NanoPi R2S firmware from [Releases](https://github.com/ophub/op/releases). Such as `OpenWrt_NanoPi_R2S_${date}`.
 
 ## Instructions
 
