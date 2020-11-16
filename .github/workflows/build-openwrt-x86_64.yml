@@ -21,8 +21,8 @@ on:
     #branches:
       #- main
     #paths:
-      #- 'router/x64/.config'
-      #- '.github/workflows/build-openwrt-x64.yml'
+      #- 'router/x86_64/.config'
+      #- '.github/workflows/build-openwrt-x86_64.yml'
   schedule:
     - cron: '0 17 * * 0'
   #watch:
@@ -32,9 +32,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: router/x64/.config
-  DIY_P1_SH: router/x64/diy-part1.sh
-  DIY_P2_SH: router/x64/diy-part2.sh
+  CONFIG_FILE: router/x86_64/.config
+  DIY_P1_SH: router/x86_64/diy-part1.sh
+  DIY_P2_SH: router/x86_64/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
