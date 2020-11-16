@@ -1,12 +1,12 @@
 #========================================================================================================================
 # https://github.com/ophub/op
-# Description: Automatically Build OpenWrt for x64
-# Function: Workflows for x64
+# Description: Automatically Build OpenWrt for x86_64
+# Function: Workflows for x86_64
 # Cron: min (0 - 59) / hour (0 - 23) / day of month (1 - 31) / month (1 - 12) / day of week (0 - 6)(Sunday - Saturday)
 #========================================================================================================================
 
-name: Build OpenWrt for x64
-
+name: Build OpenWrt for x86_64
+to 
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -145,7 +145,7 @@ jobs:
       uses: actions/upload-artifact@v2
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
-        name: openwrt_x64_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
+        name: openwrt_x86_64_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
         path: ${{ env.FILEPATH }}
         retention-days: ${{ env.RECENT_LASTEST }}
 
@@ -169,11 +169,11 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: ${{ env.FILEPATH }}/*
-        tag: openwrt_x64_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
+        tag: openwrt_x86_64_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
         overwrite: true
         file_glob: true
         body: |
-          This is OpenWrt firmware for X64 ${{ env.DEVICE_NAME }}
+          This is OpenWrt firmware for x86_64 ${{ env.DEVICE_NAME }}
           * Firmware information
           Default IP: 192.168.1.1
           Default username: root
