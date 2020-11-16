@@ -1,11 +1,11 @@
 #========================================================================================================================
 # https://github.com/ophub/op
-# Description: Automatically Build OpenWrt for x86_64
-# Function: Workflows for x86_64
+# Description: Automatically Build OpenWrt for X86_64
+# Function: Workflows for X86_64
 # Cron: min (0 - 59) / hour (0 - 23) / day of month (1 - 31) / month (1 - 12) / day of week (0 - 6)(Sunday - Saturday)
 #========================================================================================================================
 
-name: Build OpenWrt for x86_64
+name: Build OpenWrt for X86_64
 to 
 on:
   repository_dispatch:
