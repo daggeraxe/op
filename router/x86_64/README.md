@@ -22,7 +22,7 @@ Login in to Synology: Virtual Machine Manager → Image → Add → Upload the .
 ```
 ## Compilation method
 
-- Select ***`Build OpenWrt for x64`*** on the [Action](https://github.com/ophub/op/actions) page.
+- Select ***`Build OpenWrt for X86_64`*** on the [Action](https://github.com/ophub/op/actions) page.
 - Click the ***`Run workflow`*** button.
 
 ## Configuration file function description
@@ -36,7 +36,7 @@ Login in to Synology: Virtual Machine Manager → Image → Add → Upload the .
 | diy-part2.sh | After updating and installing feeds, you can write the instructions for modifying the source code into the script, such as modifying the default IP, host name, theme, adding/removing software packages, etc. |
 
 
-## .github/workflow/build-openwrt-x64.yml related environment variable description
+## .github/workflow/build-openwrt-x86_64.yml related environment variable description
 
 | Environment variable | Features |
 | ---- | ---- |
