@@ -18,13 +18,13 @@ on:
     #paths:
       #- '.github/workflows/delete-older-releases-artifacts.yml'
   schedule:
-    - cron: '50 23 * * 0'
+    - cron: '0 23 * * 0'
 
 env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
-  KEEP_DAY: 30
-  KEEP_NUMBER: 5
+  KEEP_DAY: 15
+  KEEP_NUMBER: 2
 
 jobs:
   build:
