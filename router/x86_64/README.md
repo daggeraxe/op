@@ -1,6 +1,6 @@
-# OpenWrt for x64
+# OpenWrt for X86_64
 
-You can download the OpwnWrt for x64 firmware from [Releases](https://github.com/ophub/op/releases). Such as `OpenWrt_X64_${date}`.
+You can download the OpwnWrt for X86_64 firmware from [Releases](https://github.com/ophub/op/releases). Such as `OpenWrt_X86_64_${date}`.
 
 
 The firmware can be followed to [VMware ESXi](https://www.vmware.com/products/esxi-and-esx.html), [Parallels Desktop](http://www.parallels.cn/products/desktop/), [Synology's Virtual Machine Manager](https://www.synology.cn/en-global/dsm/feature/virtual_machine_manager) and other virtual host systems, as well as various physical hosts of x64 architecture. For specific installation methods, please refer to the installation instructions of each system.
