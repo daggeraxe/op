@@ -173,7 +173,7 @@ jobs:
         overwrite: true
         file_glob: true
         body: |
-          This is OpenWrt firmware for x86_64 ${{ env.DEVICE_NAME }}
+          This is OpenWrt firmware for X86_64 ${{ env.DEVICE_NAME }}
           * Firmware information
           Default IP: 192.168.1.1
           Default username: root
