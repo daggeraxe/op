@@ -39,6 +39,6 @@ The version update instructions record each important update point for everyone 
 | 2020.08.10 | WRT32X | ADD | ✩✩ | [WRT32X](https://https://github.com/ophub/op/tree/main/router/linksys_wrt32x) | Add OpenWrt Firmware for Linksys WRT32X. |
 | 2020.08.10 | WRT3200ACM | ADD | ✩✩ | [WRT3200ACM](https://github.com/ophub/op/tree/main/router/linksys_wrt3200acm) | Add OpenWrt Firmware for Linksys WRT3200ACM. |
 | 2020.08.10 | WRT1900ACS | ADD | ✩✩ | [WRT1900ACS](https://github.com/ophub/op/tree/main/router/linksys_wrt1900acs) | Add OpenWrt Firmware for Linksys WRT1900ACS. |
-| 2020.08.01 | x64 | ADD | ✩✩ | [x64](https://github.com/ophub/op/tree/main/router/x64) | Add OpenWrt Firmware for x64. |
+| 2020.08.01 | x86_64 | ADD | ✩✩ | [x86_64](https://github.com/ophub/op/tree/main/router/x86_64) | Add OpenWrt Firmware for x86_64. |
 | 2020.07.23 | - | ADD | ✩ | [op](https://github.com/ophub/op) | Open this Github. |
 
