@@ -128,7 +128,7 @@ jobs:
       uses: actions/upload-artifact@v2
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
-        name: Bin_openwrt_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
+        name: Bin_openwrt_x86_64_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
         path: openwrt/bin
         retention-days: ${{ env.RECENT_LASTEST }}
 
