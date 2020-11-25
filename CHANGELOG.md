@@ -11,6 +11,7 @@ The version update instructions record each important update point for everyone 
 
 | Date | Firmware | Types | Importance | Path | description |
 | ---- | ---- | ---- | ---- | ---- | ---- |
+| 2020.11.25 | S905x3 | UPDATE | ✩✩✩ | [s905x3-install.sh](https://github.com/ophub/op/tree/main/router/s905x3_phicomm-n1) | Optimized s905x3-box installation and upgrade commands. |
 | 2020.11.14 | N1, S905x3 | ADD | ✩✩✩ | [5.9.8](https://github.com/ophub/op/tree/main/router/s905x3_phicomm-n1/armbian/phicomm-n1/kernel/5.9.8) | Add New kernel. |
 | 2020.11.14 | N1, S905x3 | ADD | ✩✩✩ | [5.7.7](https://github.com/ophub/op/tree/main/router/s905x3_phicomm-n1/armbian/phicomm-n1/kernel/5.7.7) | Add New kernel. |
 | 2020.11.13 | N1 | UPDATE | ✩✩✩ | [n1-update.sh](https://github.com/ophub/op/blob/main/router/s905x3_phicomm-n1/install-program/files/n1-update.sh) | Upgraded the Phicomm-N1 upgrade script, which supports booting from the USB hard disk to upgrade. |
