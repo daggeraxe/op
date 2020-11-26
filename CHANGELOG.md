@@ -3,11 +3,12 @@ The version update instructions record each important update point for everyone 
 
 ## Release Notes
 - Date: Version update date.
-- Importance: The difference between five stars, the more stars the more important.
-- Types: ADD / UPDATE / TOOL / BUG
-- description: Detailed description of the update.
-- Path: Link to related files.
 - Firmware: Targeted OpenWrt firmware.
+- Types: ADD / UPDATE / TOOL / BUG
+- Importance: The difference between five stars (✩✩✩✩✩), the more stars the more important.
+- Path: Link to related files.
+- description: Detailed description of the update.
+
 
 | Date | Firmware | Types | Importance | Path | description |
 | ---- | ---- | ---- | ---- | ---- | ---- |
