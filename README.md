@@ -118,45 +118,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── .config
  │       ├── diy-part1.sh
  │       ├── diy-part2.sh
- │       ├── make                                      # Build script for S905x3 & Phicomm-N1
- │       ├── README.md
- │       ├── armbian                                   # armbian related files
- │       │   ├── boot-common.tar.gz                    # Public startup file
- │       │   ├── firmware.tar.gz                       # armbian firmware
- │       │   ├── dtb-amlogic                           # Armbian*Aml-s9xxx*.img's *.dtb library
- │       │   │   └── *.dtb                             # *.dtb files
- │       │   │
- │       │   └── phicomm-n1
- │       │       ├── kernel                            # Custom kernel folder 
- │       │       │   └── ${kernel}                     # Various versions of the kernel folder
- │       │       │       ├── kernel.tar.gz
- │       │       │       └── modules.tar.gz
- │       │       └── root                              # Add your custom files(ROOTFS Partition)
- │       │    
- │       ├── build_kernel                              # Build kernel for S905x3 & Phicomm-N1
- │       │   ├── make_use_img.sh                       # Kernel build script use *.img file
- │       │   ├── make_use_kernel.sh                    # Kernel build script use kernel files
- │       │   ├── update_dtb.sh                         # Update kernel.tar.xz to latest dtb files
- │       │   ├── README.md
- │       │   └── flippy
- │       │       ├── N1_Openwrt*.img                   # Recommend Use N1_Openwrt.img files
- │       │       ├── OR: S905x3_Openwrt*.img           # Use Flippy's S905x3_Openwrt*.img files
- │       │       ├── OR: Armbian*Aml-s9xxx*.img        # Use Flippy's Armbian*.img files
- │       │       │
- │       │       ├── boot-*.tar.gz                     # Use Flippy's boot*,dtb*,modules* files
- │       │       ├── dtb-amlogic-*.tar.gz
- │       │       └── modules-*.tar.gz
- │       │     
- │       └── install-program                           # Install openwrt firmware to emmc
- │           ├── Makefile            
- │           └── files
- │               ├── fstab                             # Disk mount information
- │               ├── n1-install.sh                     # Install to emmc for PHICOMM-N1
- │               ├── n1-update.sh                      # update firmware for PHICOMM-N1
- │               ├── u-boot-2015-phicomm-n1.bin        # Recovery PHICOMM-N1 emmc partition
- │               ├── s905x3-install.sh                 # Install to emmc for s905x3-box
- │               ├── s905x3-update.sh                  # update firmware for s905x3-box
- │               └── hk1box-bootloader.img             # Recovery s905x3-box emmc partition 
+ │       └── README.md
  │
  ├── LICENSE                                           # LICENSE for OP
  └── README.md                                         # Instructions for OP
