@@ -138,4 +138,4 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
 
 ## License
 
-[OP](https://github.com/ophub/op/blob/master/LICENSE) © OPHUB
+[LICENSE](https://github.com/ophub/op/blob/main/LICENSE) © OPHUB
