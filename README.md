@@ -130,7 +130,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
 - [Lienol/openwrt](https://github.com/Lienol/openwrt)
-
+- Flippy: The maker of Amlogic s9xxx Kernel for openwrt 
 - [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 - [tuanqing/mknop](https://github.com/tuanqing/mknop)
 
