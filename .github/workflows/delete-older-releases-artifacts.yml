@@ -21,7 +21,7 @@ on:
 env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
-  KEEP_DAY: 10
+  KEEP_DAY: 15
   KEEP_MININUM_RUNS: 0
 
 jobs:
