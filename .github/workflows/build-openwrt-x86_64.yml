@@ -27,7 +27,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: router/x86_64/feeds.conf.default
   CONFIG_FILE: router/x86_64/.config
   DIY_P1_SH: router/x86_64/diy-part1.sh
   DIY_P2_SH: router/x86_64/diy-part2.sh
