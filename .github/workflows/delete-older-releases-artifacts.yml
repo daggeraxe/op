@@ -22,7 +22,6 @@ env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
   KEEP_DAY: 15
-  KEEP_NUMBER: 0
 
 jobs:
   build:
@@ -47,5 +46,4 @@ jobs:
       if: env.DELETE_ARTIFACTS == 'true'
       with:
         retain_days: ${{ env.KEEP_DAY }}
-        keep_minimum_runs: ${{ env.KEEP_NUMBER }}
         
