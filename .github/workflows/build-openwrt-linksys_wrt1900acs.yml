@@ -167,8 +167,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        files: ${{ env.FILEPATH }}/*
         tag_name: openwrt_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
+        files: ${{ env.FILEPATH }}/*
         body: |
           This is OpenWrt firmware for ${{ env.DEVICE_NAME }}
           * Firmware information
