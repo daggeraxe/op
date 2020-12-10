@@ -116,10 +116,10 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   └── README.md
  │   │
  │   ├── phicomm_n1                                    # Phicomm-N1 related code files
- │   │    ├── .config
- │   │    ├── diy-part1.sh
- │   │    ├── diy-part2.sh
- │   │    └── README.md
+ │   │   ├── .config
+ │   │   ├── diy-part1.sh
+ │   │   ├── diy-part2.sh
+ │   │   └── README.md
  │   │
  │   └── s905x3                                        # S905x3 related code files
  │       ├── .config
