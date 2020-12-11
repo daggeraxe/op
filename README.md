@@ -7,6 +7,7 @@ The latest version of the OpenWrt firmware is automatically compiled every Monda
 - [Linksys WRT1900ACS](https://github.com/ophub/op/tree/master/router/linksys_wrt1900acs)
 - [Linksys WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
 - [Linksys WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
+- [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
 - [Phicomm_N1](https://github.com/ophub/op/tree/master/router/phicomm_n1)
 - [S905x3](https://github.com/ophub/op/tree/master/router/s905x3)
@@ -98,6 +99,12 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   └── README.md
  │   │
  │   ├── linksys_wrt32x                                # Linksys WRT32X related code files
+ │   │   ├── .config
+ │   │   ├── diy-part1.sh
+ │   │   ├── diy-part2.sh
+ │   │   └── README.md
+ │   │ 
+ │   ├── nanopi_r4s                                    # NanoPi R4S related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
