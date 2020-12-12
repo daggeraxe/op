@@ -9,7 +9,7 @@ The latest version of the OpenWrt firmware is automatically compiled every Monda
 - [Linksys WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
 - [Phicomm_N1](https://github.com/ophub/op/tree/master/router/phicomm_n1)
-- [S905x3](https://github.com/ophub/op/tree/master/router/s905x3)
+- [S9xxx_Boxs](https://github.com/ophub/op/tree/master/router/s9xxx)
 - [X86_64](https://github.com/ophub/op/tree/master/router/x86_64)
 
 ## Compilation method
@@ -121,7 +121,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   └── s905x3                                        # S905x3 related code files
+ │   └── s9xxx                                         # S9xxx-Boxs related code files
  │       ├── .config
  │       ├── diy-part1.sh
  │       ├── diy-part2.sh
