@@ -103,12 +103,6 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │ 
- │   ├── nanopi_r4s                                    # NanoPi R4S related code files
- │   │   ├── .config
- │   │   ├── diy-part1.sh
- │   │   ├── diy-part2.sh
- │   │   └── README.md
- │   │ 
  │   ├── nanopi_r2s                                    # NanoPi R2S related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
