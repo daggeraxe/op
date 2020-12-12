@@ -21,8 +21,8 @@ on:
     #paths:
       #- 'router/nanopi_r4s/.config'
       #- '.github/workflows/build-openwrt-nanopi_r4s.yml'
-  schedule:
-    - cron: '0 17 * * 0,3'
+  #schedule:
+    #- cron: '0 17 * * 0,3'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
