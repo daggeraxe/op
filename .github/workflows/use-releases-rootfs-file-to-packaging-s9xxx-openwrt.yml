@@ -175,6 +175,7 @@ jobs:
           Default password: password
           Default WIFI name: OpenWrt
           Default WIFI password: none
+          Installation command: s9xxx-install.sh
           [WETRANSFER](${{ env.WET_URL }})
      
 
