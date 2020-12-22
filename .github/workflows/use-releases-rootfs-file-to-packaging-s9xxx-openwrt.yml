@@ -80,7 +80,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for Belink GT-King
+    - name: Upload firmware directory for Belink GT-King
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -89,7 +89,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for Belink GT-King Pro
+    - name: Upload firmware directory for Belink GT-King Pro
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -98,7 +98,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for UGOOS AM6 Plus
+    - name: Upload firmware directory for UGOOS AM6 Plus
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
