@@ -156,7 +156,7 @@ jobs:
         echo "FILEPATH=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
 
-    - name: Upload OpenWrt Firmware to Actions for armvirt
+    - name: Upload firmware directory for armvirt
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -166,7 +166,7 @@ jobs:
         if-no-files-found: ignore
 
 
-    - name: Upload OpenWrt Firmware to Actions for S9xxx-Boxs
+    - name: Upload firmware directory for S9xxx-Boxs
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -175,7 +175,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for Belink GT-King
+    - name: Upload firmware directory for Belink GT-King
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -184,7 +184,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for Belink GT-King Pro
+    - name: Upload firmware directory for Belink GT-King Pro
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -193,7 +193,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for UGOOS AM6 Plus
+    - name: Upload firmware directory for UGOOS AM6 Plus
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -202,7 +202,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for X96-Max+
+    - name: Upload firmware directory for X96-Max+
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -211,7 +211,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for HK1-Box
+    - name: Upload firmware directory for HK1-Box
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -220,7 +220,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for H96-Max-X3
+    - name: Upload firmware directory for H96-Max-X3
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
@@ -229,7 +229,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Upload OpenWrt Firmware to Actions for Octopus-Planet
+    - name: Upload firmware directory for Octopus-Planet
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
