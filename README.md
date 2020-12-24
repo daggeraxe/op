@@ -7,6 +7,7 @@ The latest version of the OpenWrt firmware can be downloaded in [Releases](https
 - [Linksys WRT1900ACS](https://github.com/ophub/op/tree/master/router/linksys_wrt1900acs)
 - [Linksys WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
 - [Linksys WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
+- [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
 - [Phicomm_N1](https://github.com/ophub/op/tree/master/router/phicomm_n1)
 - [S9xxx_Boxs](https://github.com/ophub/op/tree/master/router/s9xxx)
@@ -99,6 +100,13 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │
  │   ├── linksys_wrt32x                                # Linksys WRT32X related code files
  │   │   ├── .config
+ │   │   ├── diy-part1.sh
+ │   │   ├── diy-part2.sh
+ │   │   └── README.md
+ │   │ 
+ │   ├── nanopi_r4s                                    # NanoPi R4S related code files
+ │   │   ├── .config-1gb
+ │   │   ├── .config-4gb
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
