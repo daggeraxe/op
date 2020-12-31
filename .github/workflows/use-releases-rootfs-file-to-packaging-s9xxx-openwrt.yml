@@ -80,6 +80,15 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
+    - name: Upload firmware directory for Phicomm-N1
+      uses: actions/upload-artifact@v2
+      if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      with:
+        name: openwrt_phicomm-n1_${{ env.FILE_DATE }}
+        path: ${{ env.FILEPATH }}/openwrt_n1_*
+        retention-days: ${{ env.RECENT_LASTEST }}
+        if-no-files-found: ignore
+
     - name: Upload firmware directory for S9xxx-Boxs
       uses: actions/upload-artifact@v2
       if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
