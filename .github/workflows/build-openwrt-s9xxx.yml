@@ -148,7 +148,8 @@ jobs:
         git clone --depth 1 https://github.com/ophub/amlogic-s9xxx-openwrt.git
         cd amlogic-s9xxx-openwrt/
         mkdir -p openwrt-armvirt
-        cp -f ../openwrt/bin/targets/*/*/*.tar.gz openwrt-armvirt/
+        cp -f ../openwrt/bin/targets/*/*/*.tar.gz openwrt-armvirt/ && sync
+        sudo rm -rf openwrt && sync
         sudo chmod +x make
         sudo ./make -d -b s9xxx_x96_hk1_h96_octopus -k 5.9.16_5.4.86
         cd out/ && sudo gzip *.img
@@ -165,6 +166,14 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
+    - name: Upload firmware directory for Phicomm-N1
+      uses: actions/upload-artifact@v2
+      if: steps.build.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      with:
+        name: openwrt_phicomm-n1_${{ env.FILE_DATE }}
+        path: ${{ env.FILEPATH }}/openwrt_n1_*
+        retention-days: ${{ env.RECENT_LASTEST }}
+        if-no-files-found: ignore
 
     - name: Upload firmware directory for S9xxx-Boxs
       uses: actions/upload-artifact@v2
