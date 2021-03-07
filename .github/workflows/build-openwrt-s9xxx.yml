@@ -1,7 +1,7 @@
 #========================================================================================================================
 # https://github.com/ophub/op
-# Description: Automatically Build OpenWrt for Amlogic s9xxx STB
-# Function: Workflows for Build S905x3
+# Description: Automatically Build OpenWrt for Amlogic S9xxx STB
+# Function: Workflows for Build OpenWrt for Amlogic S9xxx STB
 # Cron: min (0 - 59) / hour (0 - 23) / day of month (1 - 31) / month (1 - 12) / day of week (0 - 6)(Sunday - Saturday)
 #========================================================================================================================
 
@@ -143,7 +143,7 @@ jobs:
         retention-days: ${{ env.RECENT_LASTEST }}
         if-no-files-found: ignore
 
-    - name: Build OpenWrt for S9xxx-Boxs
+    - name: Build OpenWrt for Amlogic S9xxx STB
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       id: build
       run: |
@@ -189,7 +189,7 @@ jobs:
         tag_name: openwrt_s9xxx_${{ env.FILE_DATE }}
         files: ${{ env.FILEPATH }}/*
         body: |
-          This is OpenWrt firmware for Amlogic s9xxx STB
+          This is OpenWrt firmware for Amlogic S9xxx STB
           * Firmware information
           Default IP: 192.168.1.1
           Default username: root

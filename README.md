@@ -129,7 +129,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   └── s9xxx                                         # Amlogic s9xxx STB related code files
+ │   └── s9xxx                                         # Amlogic S9xxx STB related code files
  │       ├── .config
  │       ├── diy-part1.sh
  │       ├── diy-part2.sh
