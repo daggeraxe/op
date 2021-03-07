@@ -8,7 +8,7 @@ The latest version of the OpenWrt firmware can be downloaded in [Releases](https
 - [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
 - [Phicomm_N1](https://github.com/ophub/op/tree/master/router/phicomm_n1)
-- [S9xxx_Boxs](https://github.com/ophub/op/tree/master/router/s9xxx)
+- [Amlogic_S9xxx_STB](https://github.com/ophub/op/tree/master/router/s9xxx)
 - [X86_64](https://github.com/ophub/op/tree/master/router/x86_64)
 
 ## Compilation method
@@ -129,7 +129,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   └── s9xxx                                         # S9xxx-Boxs related code files
+ │   └── s9xxx                                         # Amlogic s9xxx STB related code files
  │       ├── .config
  │       ├── diy-part1.sh
  │       ├── diy-part2.sh
