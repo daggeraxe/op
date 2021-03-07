@@ -127,7 +127,7 @@ jobs:
 
     - name: Organize armvirt files
       id: organize
-      if: env.UPLOAD_ARMVIRT == 'true' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_ARMVIRT == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
@@ -144,7 +144,7 @@ jobs:
         if-no-files-found: ignore
 
     - name: Build OpenWrt for S9xxx-Boxs
-      if: steps.organize.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       id: build
       run: |
         git clone --depth 1 https://github.com/ophub/amlogic-s9xxx-openwrt.git
