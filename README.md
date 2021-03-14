@@ -105,8 +105,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   └── README.md
  │   │ 
  │   ├── nanopi_r4s                                    # NanoPi R4S related code files
- │   │   ├── .config-1gb
- │   │   ├── .config-4gb
+ │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md

@@ -1,15 +1,15 @@
-# OpenWrt for NanoPi R4S-1GB/4GB
+# OpenWrt for NanoPi R4S
 
-You can download the OpwnWrt for NanoPi R4S firmware from [Releases](https://github.com/ophub/op/releases). Such as `OpenWrt_NanoPi_R4S-1GB/4GB_${date}`.
+You can download the OpwnWrt for NanoPi R4S firmware from [Releases](https://github.com/ophub/op/releases). Such as `OpenWrt_NanoPi_R4S_${date}`.
 
 ## Instructions
 
 1. Before burning the system, it is recommended to format the TF card (MicroSD card/TF card: 8GB SDHC card of Class10 or above), and use a writing tool such as [balenaEtcher](https://www.balena.io/etcher/) to write the *.img file into the TF card.
-2. Insert the completed TF card into the NanoPi-R2S card slot, power on and start (5V/2A), and see the SYS red light flashing, indicating that the system has successfully started.
+2. Insert the completed TF card into the NanoPi-R4S card slot, power on and start (5V/2A), and see the SYS red light flashing, indicating that the system has successfully started.
 
 ## Compilation method
 
-- Select ***`Build OpenWrt for NanoPi R4S-1GB/4GB`*** on the [Action](https://github.com/ophub/op/actions) page.
+- Select ***`Build OpenWrt for NanoPi R4S`*** on the [Action](https://github.com/ophub/op/actions) page.
 - Click the ***`Run workflow`*** button.
 
 ## Configuration file function description
@@ -22,7 +22,7 @@ You can download the OpwnWrt for NanoPi R4S firmware from [Releases](https://git
 | diy-part1.sh | Execute before updating and installing feeds, you can write instructions for modifying the source code into the script, such as adding/modifying/deleting feeds.conf.default. |
 | diy-part2.sh | After updating and installing feeds, you can write the instructions for modifying the source code into the script, such as modifying the default IP, host name, theme, adding/removing software packages, etc. |
 
-## .github/workflow/build-openwrt-nanopi_r4s-*gb.yml related environment variable description
+## .github/workflow/build-openwrt-nanopi_r4s.yml related environment variable description
 
 | Environment variable | Features |
 | ---- | ---- |
@@ -48,7 +48,7 @@ You can download the OpwnWrt for NanoPi R4S firmware from [Releases](https://git
 | ---- | ---- |
 | Target System | Rockchip |
 | Subtarget | RK33xx boards (64 bit) |
-| Target Profile | NanoPi R4S 1GB/4GB |
+| Target Profile | NanoPi R4S |
 | Target Images | squashfs |
 | LuCI -> Applications | in the file: .config |
 
