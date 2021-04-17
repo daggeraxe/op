@@ -21,10 +21,10 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: router/s9xxx/feeds.conf.default
-  CONFIG_FILE: router/s9xxx/.config
-  DIY_P1_SH: router/s9xxx/diy-part1.sh
-  DIY_P2_SH: router/s9xxx/diy-part2.sh
+  FEEDS_CONF: router/amlogic_s9xxx/feeds.conf.default
+  CONFIG_FILE: router/amlogic_s9xxx/.config
+  DIY_P1_SH: router/amlogic_s9xxx/diy-part1.sh
+  DIY_P2_SH: router/amlogic_s9xxx/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_ARMVIRT: false
   UPLOAD_FIRMWARE: true
