@@ -7,7 +7,6 @@ The latest version of the OpenWrt firmware can be downloaded in [Releases](https
 - [Linksys_WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
 - [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
-- [Phicomm_N1](https://github.com/ophub/op/tree/master/router/phicomm_n1)
 - [Amlogic_S9xxx_STB](https://github.com/ophub/op/tree/master/router/s9xxx)
 - [X86_64](https://github.com/ophub/op/tree/master/router/x86_64)
 
@@ -79,7 +78,6 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
  │       ├── build-openwrt-x86_64.yml                  # Build X86_64 Virtual Machine firmware
  │       ├── build-openwrt-s9xxx.yml                   # Build S9xxx-Boxes firmware
- │       ├── build-openwrt-phicomm_n1.yml              # Build Phicomm-N1 firmware
  │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
@@ -121,12 +119,6 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   ├── phicomm_n1                                    # Phicomm-N1 related code files
- │   │   ├── .config
- │   │   ├── diy-part1.sh
- │   │   ├── diy-part2.sh
- │   │   └── README.md
- │   │
  │   └── s9xxx                                         # Amlogic S9xxx STB related code files
  │       ├── .config
  │       ├── diy-part1.sh
@@ -143,11 +135,9 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
 - [Lienol/openwrt](https://github.com/Lienol/openwrt)
-- Flippy: The maker of Amlogic s9xxx Kernel for openwrt 
-- [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
+- [unifreq/openwrt_packit](https://github.com/unifreq/openwrt_packit)
 - [tuanqing/mknop](https://github.com/tuanqing/mknop)
-
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
+- [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 
 ## License
 
