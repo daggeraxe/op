@@ -2,12 +2,12 @@
 
 The latest version of the OpenWrt firmware can be downloaded in [Releases](https://github.com/ophub/op/releases). For detailed information about each firmware, please refer to the README.md file of each model. The currently supported router models are: 
 
+- [Amlogic_s9xxx](https://github.com/ophub/op/tree/master/router/amlogic_s9xxx)
 - [Linksys_WRT1900ACS](https://github.com/ophub/op/tree/master/router/linksys_wrt1900acs)
 - [Linksys_WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
 - [Linksys_WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
 - [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
-- [Amlogic_s9xxx](https://github.com/ophub/op/tree/master/router/amlogic_s9xxx)
 - [X86_64](https://github.com/ophub/op/tree/master/router/x86_64)
 
 ## Compilation method
@@ -72,17 +72,23 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
 
  op
  ├── .github
- │   └── workflows                        
+ │   └── workflows
+ │       ├── build-openwrt-s9xxx.yml                   # Build S9xxx-Boxes firmware
  │       ├── build-openwrt-linksys_wrt1900acs.yml      # Build Linksys WRT1900ACS firmware
  │       ├── build-openwrt-linksys_wrt3200acm.yml      # Build Linksys WRT3200ACM firmware
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
- │       ├── build-openwrt-x86_64.yml                  # Build X86_64 Virtual Machine firmware
- │       ├── build-openwrt-s9xxx.yml                   # Build S9xxx-Boxes firmware
  │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
+ │       ├── build-openwrt-x86_64.yml                  # Build X86_64 Virtual Machine firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
  │
- ├── router                                            # Related router Openwrt firmware codes 
+ ├── router                                            # Related router Openwrt firmware codes
+ │   ├── amlogic_s9xxx                                 # Amlogic S9xxx STB related code files
+ │   │   ├── .config
+ │   │   ├── diy-part1.sh
+ │   │   ├── diy-part2.sh
+ │   │   └── README.md 
+ │   │
  │   ├── linksys_wrt1900acs                            # Linksys WRT1900ACS related code files
  │   │   ├── .config                                   # config luci-app, luci-theme and other
  │   │   ├── diy-part1.sh                              # DIY script part 1(Before Update feeds)
@@ -100,33 +106,27 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
- │   │ 
- │   ├── nanopi_r4s                                    # NanoPi R4S related code files
- │   │   ├── .config
- │   │   ├── diy-part1.sh
- │   │   ├── diy-part2.sh
- │   │   └── README.md
- │   │ 
+ │   │
  │   ├── nanopi_r2s                                    # NanoPi R2S related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   ├── x86_64                                        # x86_64 related code files
+ │   ├── nanopi_r4s                                    # NanoPi R4S related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   └── amlogic_s9xxx                                 # Amlogic S9xxx STB related code files
+ │   └── x86_64                                        # x86_64 related code files
  │       ├── .config
  │       ├── diy-part1.sh
  │       ├── diy-part2.sh
  │       └── README.md
  │
  ├── LICENSE                                           # LICENSE for OP
- └── README.md                                         # Instructions for OP
+ └── README.md                                         # README for OP
    
 ```
 
