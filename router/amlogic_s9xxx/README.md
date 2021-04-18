@@ -19,24 +19,38 @@ The OpenWrt firmware of the same `Model` is common. You can write this OpenWrt f
 
 For more OpenWrt firmware .dtb files are in the [dtb-amlogic](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/amlogic-dtb) directory. You can use the OpenWrt firmware to install via USB hard disk. When writing into EMMC through [openwrt-install](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/install-program/files/openwrt-install), [select 0: Enter the dtb file name of your box](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/amlogic-dtb), and use the Amlogic S9xxx STB you own.
 
-## Install to EMMC and upgrade instructions
+## Install to Amlogic S9xxx STB EMMC and update instructions
 
 Choose the corresponding firmware according to your Amlogic S9xxx STB. Then write the IMG file to the USB hard disk through software such as [Rufus](https://rufus.ie/) or [balenaEtcher](https://www.balena.io/etcher/). Insert the USB hard disk into the Amlogic S9xxx STB. Common for all `Amlogic S9xxx STB`.
 
-***`Install OpenWrt`***
+### Install OpenWrt
 
 - Log in to the default IP: 192.168.1.1 → `Login in to openwrt` → `system menu` → `TTYD terminal` → input command: 
 
 ```yaml
 openwrt-install
 ```
-***`Upgrade OpenWrt`***
+
+When writing into EMMC through [openwrt-install](https://github.com/ophub/amlogic-s9xxx-openwrt/blob/main/amlogic-s9xxx/install-program/files/openwrt-install), `select the name` of the Amlogic S9xxx STB you own in the menu.
+
+For more OpenWrt firmware .dtb files are in the [amlogic-dtb](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/amlogic-dtb) directory. You can use the `openwrt_s905x3_v*.img` firmware to install via USB hard disk. When writing into EMMC through [openwrt-install](https://github.com/ophub/amlogic-s9xxx-openwrt/blob/main/amlogic-s9xxx/install-program/files/openwrt-install), [select 0: Enter the dtb file name of your box](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/amlogic-dtb), and use the Amlogic S9xxx STB you own.
+
+### Update OpenWrt firmware
 
 - Log in to the default IP: 192.168.1.1 →  `Login in to openwrt` → `system menu` → `file transfer` → upload ***`openwrt*.img.gz (Support suffix: *.img.xz, *.img.gz, *.7z, *.zip)`*** to ***`/tmp/upload/`***, enter the `system menu` → `TTYD terminal` → input command: 
 
 ```yaml
 openwrt-update
 ```
+💡Tips: You can also put the `update file` in the `/mnt/mmcblk*p4/` directory, the [openwrt-update](https://github.com/ophub/amlogic-s9xxx-openwrt/blob/main/amlogic-s9xxx/install-program/files/openwrt-update) script will automatically find the `update file` from the `/mnt/mmcblk*p4/` and `/tmp/upload/` directories.
+    
+If there is only one `update file` in the ***`/mnt/mmcblk*p4/`*** and ***`/tmp/upload/`***  directory, you can just enter the ***`openwrt-update`*** command without specifying a specific `update file`. The `openwrt-update` will vaguely look for `update file` from this directory and try to update. If there are multiple `update file` in the `/mnt/mmcblk*p4/` directory, please use the ***`openwrt-update specified_update_file`*** command to specify the `update file`. When the `update file` is not found in the `/mnt/mmcblk*p4/` directory, the `openwrt-update` will search for the `update file` in the `/tmp/upload/` directory and move it to the `/mnt/mmcblk*p4/` directory to perform the update operation. 
+
+- The `openwrt-update` update file search order
+
+| Directory | `/mnt/mmcblk*p4/` 1-6 | `/tmp/upload/` 7-10 |
+| ---- | ---- | ---- |
+| Oeder | `specified_update_file` → `*.img` → `*.img.xz` → `*.img.gz` → `*.7z` → `*.zip` → | `*.img.xz` → `*.img.gz` → `*.7z` → `*.zip` |
 
 [For more instructions please see: install-program](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/install-program)
 
