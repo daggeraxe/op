@@ -6,8 +6,8 @@ The latest version of the OpenWrt firmware can be downloaded in [Releases](https
 - [Linksys_WRT1900ACS](https://github.com/ophub/op/tree/master/router/linksys_wrt1900acs)
 - [Linksys_WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
 - [Linksys_WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
-- [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
+- [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
 - [X86_64](https://github.com/ophub/op/tree/master/router/x86_64)
 
 ## Compilation method
@@ -17,7 +17,7 @@ The latest version of the OpenWrt firmware can be downloaded in [Releases](https
 
 ## Related script usage instructions
 
-There are currently two DIY scripts in the root directory of the warehouse: `diy-part1.sh`, `diy-part2.sh` and `.config`, which are executed before and after the update and installation of ` ./scripts/feeds update && ./scripts/feeds install `. You can write the instructions for modifying the source code into the script, such as modifying `the default IP , Host name, theme, add/remove software package...`, etc. If the additional software package has the same name as the existing software package in the OpenWrt source code, the software package with the same name in the Open­Wrt source code needs to be deleted, otherwise the packages in Open­Wrt will be compiled first. It will automatically traverse all files in the `package` directory when compiling.
+There are currently two DIY scripts in the root directory of the warehouse: `diy-part1.sh`, `diy-part2.sh` and `.config`, which are executed before and after the update and installation of ` ./scripts/feeds update && ./scripts/feeds install `. You can write the instructions for modifying the source code into the script, such as modifying `the default IP , Host name, theme, add/remove software package...`, etc. If the additional software package has the same name as the existing software package in the OpenWrt source code, the software package with the same name in the OpenWrt source code needs to be deleted, otherwise the packages in OpenWrt will be compiled first. It will automatically traverse all files in the `package` directory when compiling.
 
 
 Just put the `feeds.conf.default` file into the root directory of the warehouse, it will overwrite the relevant files in the Open­Wrt source directory. Create a new `files` directory under the root directory of the warehouse, and put the customized related files in the same directory structure as OpenWrt, and the OpenWrt configuration will be overwritten during compilation.
@@ -77,8 +77,8 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build-openwrt-linksys_wrt1900acs.yml      # Build Linksys WRT1900ACS firmware
  │       ├── build-openwrt-linksys_wrt3200acm.yml      # Build Linksys WRT3200ACM firmware
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
- │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
+ │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
  │       ├── build-openwrt-x86_64.yml                  # Build X86_64 Virtual Machine firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
  │
