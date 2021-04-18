@@ -19,8 +19,8 @@ on:
     - cron: '0 17 * * *'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: router/amlogic_s9xxx/feeds.conf.default
   CONFIG_FILE: router/amlogic_s9xxx/.config
   DIY_P1_SH: router/amlogic_s9xxx/diy-part1.sh
