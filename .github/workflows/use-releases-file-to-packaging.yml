@@ -16,7 +16,7 @@ on:
         required: false
         default: 'false'
       packagerepo:
-        description: 'Set package script: ophub / flippy'
+        description: 'Package repo: ophub / flippy'
         required: false
         default: 'ophub'
   #schedule:
