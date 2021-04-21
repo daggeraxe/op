@@ -68,7 +68,7 @@ jobs:
       id: download
       run: |
         armvirt_tarfile_path="openwrt/bin/targets/armvirt/64"
-        [ -d "${armvirt_tarfile_path}" ] || sudo mkdir -p ${armvirt_tarfile_path}
+        [ -d "${armvirt_tarfile_path}" ] || mkdir -p ${armvirt_tarfile_path}
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" | grep -o "openwrt_${{ env.RELEASES_BRANCH }}_.*/openwrt-armvirt-.*\.tar.gz" | head -n 1 > DOWNLOAD_URL
         [ -s DOWNLOAD_URL ] && wget -q -P ${armvirt_tarfile_path} https://github.com/${GITHUB_REPOSITORY}/releases/download/$(cat DOWNLOAD_URL)
