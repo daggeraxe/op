@@ -3,6 +3,7 @@
 The latest version of the OpenWrt firmware can be downloaded in [Releases](https://github.com/ophub/op/releases). For detailed information about each firmware, please refer to the README.md file of each model. The currently supported router models are: 
 
 - [Amlogic_s9xxx](https://github.com/ophub/op/tree/master/router/amlogic_s9xxx)
+- [Armvirt_64](https://github.com/ophub/op/tree/master/router/armvirt_64)
 - [Linksys_WRT1900ACS](https://github.com/ophub/op/tree/master/router/linksys_wrt1900acs)
 - [Linksys_WRT3200ACM](https://github.com/ophub/op/tree/master/router/linksys_wrt3200acm)
 - [Linksys_WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
@@ -74,6 +75,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  ├── .github
  │   └── workflows
  │       ├── build-openwrt-s9xxx.yml                   # Build S9xxx-Boxes firmware
+ │       ├── build-openwrt-armvirt.yml                 # Build Armvirt firmware
  │       ├── build-openwrt-linksys_wrt1900acs.yml      # Build Linksys WRT1900ACS firmware
  │       ├── build-openwrt-linksys_wrt3200acm.yml      # Build Linksys WRT3200ACM firmware
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
@@ -88,6 +90,12 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
  │   │   └── README.md 
+ │   │
+ │   ├── armvirt_64                                    # Armvirt 64 related code files
+ │   │   ├── .config
+ │   │   ├── diy-part1.sh
+ │   │   ├── diy-part2.sh
+ │   │   └── README.md  
  │   │
  │   ├── linksys_wrt1900acs                            # Linksys WRT1900ACS related code files
  │   │   ├── .config                                   # config luci-app, luci-theme and other
