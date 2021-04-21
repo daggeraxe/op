@@ -73,7 +73,7 @@ jobs:
 
         armvirt_tarfile_path="openwrt/bin/targets/armvirt/64"
         [ -d "${armvirt_tarfile_path}" ] || mkdir -p ${armvirt_tarfile_path}
-        curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" | grep -o "openwrt_${RELEASES_BRANCH}_.*/openwrt-armvirt-.*\.tar.gz" | head -n 1 > DOWNLOAD_URL
+        curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" | grep -o "openwrt_${{ env.RELEASES_BRANCH }}_.*/openwrt-armvirt-.*\.tar.gz" | head -n 1 > DOWNLOAD_URL
         [ -s DOWNLOAD_URL ] && wget -q -P ${armvirt_tarfile_path} https://github.com/${GITHUB_REPOSITORY}/releases/download/$(cat DOWNLOAD_URL)
 
         echo "::set-output name=status::success"
@@ -124,7 +124,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: openwrt_armvirt_64_${{ env.PACKAGED_OUTPUTDATE }}
+        tag_name: openwrt_${{ env.RELEASES_BRANCH }}_${{ env.PACKAGED_OUTPUTDATE }}
         files: ${{ env.PACKAGED_OUTPUTPATH }}/*
         body: |
           This is OpenWrt firmware for Armvirt 64
@@ -134,5 +134,4 @@ jobs:
           Default password: password
           Default WIFI name: OpenWrt
           Default WIFI password: none
-          Install command: cd /root && chmod +x install*.sh && ./install*.sh
 
