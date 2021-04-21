@@ -50,12 +50,6 @@ jobs:
         sudo mkdir -p /workdir/openwrt/bin/targets/armvirt/64
         sudo chown $USER:$GROUPS /workdir
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        echo "COMPILE_STARTINGTIME=$(date +"%Y.%m.%d.%H%M")" >> $GITHUB_ENV
-
-    - name: Download armvirt file
-      id: download
-      run: |
-        # Input value validation
         ARR_BRANCH=("ophub" "flippy")
         if  [[ -n "${{ github.event.inputs.packagerepo }}" && -n "$(echo "${ARR_BRANCH[@]}" | grep -w "${{ github.event.inputs.packagerepo }}")" ]]; then
             PACKAGE_OP_SCRIPT=${{ github.event.inputs.packagerepo }}
@@ -63,16 +57,19 @@ jobs:
             PACKAGE_OP_SCRIPT=ophub
         fi
         echo "PACKAGE_OP_SCRIPT=${PACKAGE_OP_SCRIPT}" >> $GITHUB_ENV
-
         if  [[ "${PACKAGE_OP_SCRIPT}" == "ophub" ]]; then
             RELEASES_BRANCH="s9xxx"
         else
             RELEASES_BRANCH="armvirt"
         fi
         echo "RELEASES_BRANCH=${RELEASES_BRANCH}" >> $GITHUB_ENV
+        echo "COMPILE_STARTINGTIME=$(date +"%Y.%m.%d.%H%M")" >> $GITHUB_ENV
 
+    - name: Download armvirt file
+      id: download
+      run: |
         armvirt_tarfile_path="openwrt/bin/targets/armvirt/64"
-        curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" | grep -o "openwrt_${RELEASES_BRANCH}_.*/openwrt-armvirt-.*\.tar.gz" | head -n 1 > DOWNLOAD_URL
+        curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" | grep -o "openwrt_${{ env.RELEASES_BRANCH }}_.*/openwrt-armvirt-.*\.tar.gz" | head -n 1 > DOWNLOAD_URL
         [ -s DOWNLOAD_URL ] && wget -q -P ${armvirt_tarfile_path} https://github.com/${GITHUB_REPOSITORY}/releases/download/$(cat DOWNLOAD_URL)
 
         echo "::set-output name=status::success"
