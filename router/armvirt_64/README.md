@@ -54,8 +54,6 @@ cd /mnt/mmcblk*p4/ && chmod update*.sh && ./update*.sh
 | UPLOAD_BIN_DIR | Upload the bin directory (all ipk files and firmware). Default false |
 | UPLOAD_FIRMWARE | Upload firmware catalog. Default true |
 | UPLOAD_RELEASE | Upload firmware to release. Default true |
-| UPLOAD_COWTRANSFER | Upload the firmware to CowTransfer.com. Default false |
-| UPLOAD_WERANSFER | Upload the firmware to WeTransfer.com. Default failure |
 | RECENT_LASTEST | maximum retention days for release, artifacts and logs in GitHub Release and Actions. |
 | TZ | Time zone setting |
 | GITHUB_REPOSITORY | Github.com Environment variables. The owner and repository name. For example, ophub/op. |
