@@ -47,9 +47,8 @@ jobs:
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
-        sudo mkdir -p /workdir/openwrt/bin/targets/armvirt/64
+        sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         ARR_BRANCH=("ophub" "flippy")
         if  [[ -n "${{ github.event.inputs.packagerepo }}" && -n "$(echo "${ARR_BRANCH[@]}" | grep -w "${{ github.event.inputs.packagerepo }}")" ]]; then
             PACKAGE_OP_SCRIPT=${{ github.event.inputs.packagerepo }}
@@ -69,6 +68,8 @@ jobs:
       id: download
       run: |
         armvirt_tarfile_path="openwrt/bin/targets/armvirt/64"
+        [ -d "${armvirt_tarfile_path}" ] || sudo mkdir -p ${armvirt_tarfile_path}
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" | grep -o "openwrt_${{ env.RELEASES_BRANCH }}_.*/openwrt-armvirt-.*\.tar.gz" | head -n 1 > DOWNLOAD_URL
         [ -s DOWNLOAD_URL ] && wget -q -P ${armvirt_tarfile_path} https://github.com/${GITHUB_REPOSITORY}/releases/download/$(cat DOWNLOAD_URL)
 
