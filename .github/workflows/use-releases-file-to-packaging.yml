@@ -99,8 +99,6 @@ jobs:
     - name: Packaged OpenWrt use Flippy script
       uses: ophub/flippy-openwrt-actions@main
       if: env.PACKAGE_OP_SCRIPT == 'flippy' && !cancelled()
-      with:
-        mode: flippy
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: s905d_s905x3_vplus_beikeyun_l1pro
