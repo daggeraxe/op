@@ -79,22 +79,14 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
-    - name: Package Armvirt as OpenWrt use ophub script
+    - name: Package Armvirt as OpenWrt use Ophub script
+      uses: ophub/amlogic-s9xxx-openwrt@main
       if: env.PACKAGE_OP_SCRIPT == 'ophub' && !cancelled()
-      run: |
-        git clone --depth 1 https://github.com/ophub/amlogic-s9xxx-openwrt.git
-        cd amlogic-s9xxx-openwrt/
-        [ -d openwrt-armvirt ] || sudo mkdir -p openwrt-armvirt
-        sudo cp -f ../openwrt/bin/targets/*/*/*.tar.gz openwrt-armvirt/ && sync
-        sudo rm -rf ../openwrt && sync
-        sudo rm -rf /workdir && sync
-        sudo chmod +x make
-        sudo ./make -d -b s905x3_s905x2_s905x_s905d_s922x_s912 -k 5.10.31.TF_5.4.113
-        cd out/ && sudo gzip *.img
-        cp -f ../openwrt-armvirt/*.tar.gz . && sync
-        echo "PACKAGED_OUTPUTPATH=${PWD}" >> $GITHUB_ENV
-        echo "PACKAGED_OUTPUTDATE=$(date +"%Y.%m.%d.%H%M")" >> $GITHUB_ENV
-        echo "PACKAGED_STATUS=success" >> $GITHUB_ENV
+      with:
+        armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
+        amlogic_openwrt: s905d_s905x3
+        amlogic_kernel: 5.10.31.TF_5.4.113
+        amlogic_size: 1024
 
     - name: Package Armvirt as OpenWrt use Flippy script
       uses: ophub/flippy-openwrt-actions@main
