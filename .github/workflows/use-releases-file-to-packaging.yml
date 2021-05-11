@@ -23,7 +23,7 @@ on:
     #- cron: '0 22 * * *'
 
 env:
-  UPLOAD_FIRMWARE: true
+  UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: true
   RECENT_LASTEST: 3
   TZ: Asia/Shanghai
@@ -69,7 +69,6 @@ jobs:
         [ -d "${armvirt_tarfile_path}" ] || mkdir -p ${armvirt_tarfile_path}
         curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" | grep -o "openwrt_${{ env.RELEASES_BRANCH }}_.*/openwrt-armvirt-.*\.tar.gz" | head -n 1 > DOWNLOAD_URL
         [ -s DOWNLOAD_URL ] && wget -q -P ${armvirt_tarfile_path} https://github.com/${GITHUB_REPOSITORY}/releases/download/$(cat DOWNLOAD_URL)
-
         echo "::set-output name=status::success"
 
     - name: SSH connection to Actions @ Ctrl+C to enter, Ctrl+D to exit
@@ -81,7 +80,7 @@ jobs:
 
     - name: Package Armvirt as OpenWrt use Ophub script
       uses: ophub/amlogic-s9xxx-openwrt@main
-      if: env.PACKAGE_OP_SCRIPT == 'ophub' && !cancelled()
+      if: steps.download.outputs.status == 'success' && env.PACKAGE_OP_SCRIPT == 'ophub' && !cancelled()
       with:
         armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
         amlogic_openwrt: s905x3_s905x2_s905x_s905d_s922x_s912
@@ -90,7 +89,7 @@ jobs:
 
     - name: Package Armvirt as OpenWrt use Flippy script
       uses: ophub/flippy-openwrt-actions@main
-      if: env.PACKAGE_OP_SCRIPT == 'flippy' && !cancelled()
+      if: steps.download.outputs.status == 'success' && env.PACKAGE_OP_SCRIPT == 'flippy' && !cancelled()
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: s905d_s905x3_s922x_vplus_beikeyun_l1pro

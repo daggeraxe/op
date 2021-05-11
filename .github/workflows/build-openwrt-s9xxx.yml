@@ -27,7 +27,7 @@ env:
   DIY_P2_SH: router/amlogic_s9xxx/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_ARMVIRT: false
-  UPLOAD_FIRMWARE: true
+  UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
@@ -144,7 +144,7 @@ jobs:
         if-no-files-found: ignore
 
     - name: Package Armvirt as OpenWrt
-      if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && !cancelled()
       uses: ophub/amlogic-s9xxx-openwrt@main
       with:
         armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
