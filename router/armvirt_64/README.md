@@ -1,6 +1,6 @@
 # OpenWrt for Armvirt 64
 
-Support vplus, beikeyun, l1pro, and Amlogic S9xxx STB are S905x3, S905x2, S922x, S905x, S905d, s905, s912. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_s9xxx_${date}`.
+Support vplus, beikeyun, l1pro, and Amlogic S9xxx STB are S905x3, S905x2, S922x, S905x, S905d, s905, s912. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_armvirt_${date}`.
 
 This OpenWrt firmware is packaged using [flippy-openwrt-actions](https://github.com/ophub/flippy-openwrt-actions) . If you like it, Please click the `Star`.
 
