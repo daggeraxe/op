@@ -42,8 +42,8 @@ rm -rf package/openwrt-passwall/{kcptun,xray-core} 2>/dev/null
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
-# # Add luci-app-ssr-plus
-svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
+# Add luci-app-ssr-plus
+svn co https://github.com/fw876/helloworld/trunk/{luci-app-ssr-plus,shadowsocksr-libev} package/openwrt-ssrplus
 
 # Add luci-app-rclone
 svn co https://github.com/ElonH/Rclone-OpenWrt/trunk package/openWrt-rclone
