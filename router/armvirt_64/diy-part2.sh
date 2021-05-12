@@ -1,10 +1,10 @@
 #!/bin/bash
 #========================================================================================================================
-# https://github.com/ophub/op
-# Description: Automatically Build OpenWrt for Armvirt 64
+# https://github.com/ophub/amlogic-s9xxx-openwrt
+# Description: Automatically Build OpenWrt for Amlogic S9xxx STB
 # Function: Diy script (After Update feeds, Modify the default IP, hostname, theme, add/remove software packages, etc.)
 # Copyright (C) 2020 https://github.com/P3TERX/Actions-OpenWrt
-# Copyright (C) 2020 https://github.com/ophub/op
+# Copyright (C) 2020 https://github.com/ophub/amlogic-s9xxx-openwrt
 #========================================================================================================================
 
 # Modify default IP（FROM 192.168.1.1 CHANGE TO 192.168.31.4）
@@ -33,11 +33,11 @@
 # Apply patch
 # git apply ../router-config/patches/{0001*,0002*}.patch --directory=feeds/luci
 
-# Modify some code adaptation
-sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
-
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+
+# Modify some code adaptation
+sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 
 # Mydiy luci-app and luci-theme（use to /.config luci-app&theme）
 # ==========luci-app-url==========

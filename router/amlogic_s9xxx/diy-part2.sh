@@ -74,6 +74,6 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-bootstrap-mod package/luci-theme-bootstrap-mod
 
 # Convert translation files zh-cn to zh_Hans
-convert_translation=${GITHUB_WORKSPACE}/router/amlogic_s9xxx/convert_translation.sh
+convert_translation=${GITHUB_WORKSPACE}/router-config/openwrt-master/convert_translation.sh
 chmod +x ${convert_translation} && ${convert_translation}
 
