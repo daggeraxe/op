@@ -178,7 +178,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: openwrt_s9xxx_${{ env.PACKAGED_OUTPUTDATE }}
+        tag_name: openwrt_s9xxx_lede_${{ env.PACKAGED_OUTPUTDATE }}
         files: ${{ env.PACKAGED_OUTPUTPATH }}/*
         body: |
           This is OpenWrt firmware for Amlogic S9xxx STB
