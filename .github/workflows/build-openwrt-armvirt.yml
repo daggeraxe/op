@@ -147,7 +147,7 @@ jobs:
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: s905d_s905x3_vplus_beikeyun_l1pro
-        KERNEL_VERSION_NAME: 5.12.9_5.4.124
+        KERNEL_VERSION_NAME: 5.12.10_5.4.125
 
     - name: Upload artifact to Actions
       uses: kittaakos/upload-artifact-as-is@master
