@@ -9,6 +9,7 @@ The latest version of the OpenWrt firmware can be downloaded in [Releases](https
 - [Linksys_WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
 - [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
+- [OrangePi_Zero](https://github.com/ophub/op/tree/master/router/orangepi_zero)
 - [Raspberry_Pi3](https://github.com/ophub/op/tree/master/router/raspberry_pi3)
 - [Raspberry_Pi4](https://github.com/ophub/op/tree/master/router/raspberry_pi4)
 - [X86_64](https://github.com/ophub/op/tree/master/router/x86_64)
@@ -84,6 +85,7 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
  │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
  │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
+ │       ├── build-openwrt-orangepi-zero.yml           # Build OrangePi Zero firmware
  │       ├── build-openwrt-raspberry_pi-3.yml          # Build Raspberry Pi-3 firmware
  │       ├── build-openwrt-raspberry_pi-4.yml          # Build Raspberry Pi-4 firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
@@ -126,6 +128,12 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   └── README.md
  │   │
  │   ├── nanopi_r4s                                    # NanoPi R4S related code files
+ │   │   ├── .config
+ │   │   ├── diy-part1.sh
+ │   │   ├── diy-part2.sh
+ │   │   └── README.md
+ │   │
+ │   ├── orangepi_zero                                 # OrangePi Zero related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
