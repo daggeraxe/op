@@ -1,7 +1,7 @@
 #!/bin/bash
 #========================================================================================================================
 # https://github.com/ophub/op
-# Description: Automatically Build OpenWrt for Raspberry Pi-4
+# Description: Automatically Build OpenWrt for Raspberry Pi-3
 # Function: Diy script (After Update feeds, Modify the default IP, hostname, theme, add/remove software packages, etc.)
 # Copyright (C) 2020 https://github.com/P3TERX/Actions-OpenWrt
 # Copyright (C) 2020 https://github.com/ophub/op
@@ -35,10 +35,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-material/g' ./feeds/luci/collections/l
 
 # Modify some code adaptation
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
-
-# for Raspberry Pi 4 wifi
-sed -i 's/36/44/g;s/VHT80/VHT20/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # Mydiy luci-app and luci-theme（use to /.config luci-app&theme）
 # ==========luci-app-url==========

@@ -83,7 +83,8 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
  │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
  │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
- │       ├── build-openwrt-raspberry_pi4.yml           # Build Raspberry Pi4 firmware
+ │       ├── build-openwrt-raspberry_pi-3.yml          # Build Raspberry Pi-3 firmware
+ │       ├── build-openwrt-raspberry_pi-4.yml          # Build Raspberry Pi-4 firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
  │
  ├── router                                            # Related router Openwrt firmware codes
@@ -129,7 +130,13 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  │   │   ├── diy-part2.sh
  │   │   └── README.md
  │   │
- │   ├── raspberry_pi4                                 # Raspberry Pi4 related code files
+ │   ├── raspberry_pi3                                 # Raspberry Pi-3 related code files
+ │   │   ├── .config
+ │   │   ├── diy-part1.sh
+ │   │   ├── diy-part2.sh
+ │   │   └── README.md
+ │   │
+ │   ├── raspberry_pi4                                 # Raspberry Pi-4 related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh

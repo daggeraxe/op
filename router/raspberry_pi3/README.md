@@ -1,10 +1,10 @@
-# OpenWrt for Raspberry Pi-4
+# OpenWrt for Raspberry Pi-3
 
-Support Raspberry Pi-4. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_openwrt_rpi-4_${date}`.
+Support Raspberry Pi-3. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_rpi-3_${date}`.
 
 ## Compilation method
 
-- Select ***`Build OpenWrt for Raspberry Pi-4`*** on the [Action](https://github.com/ophub/op/actions) page.
+- Select ***`Build OpenWrt for Raspberry Pi-3`*** on the [Action](https://github.com/ophub/op/actions) page.
 - Click the ***`Run workflow`*** button.
 
 ## Configuration file function description
