@@ -9,6 +9,7 @@ The latest version of the OpenWrt firmware can be downloaded in [Releases](https
 - [Linksys_WRT32X](https://github.com/ophub/op/tree/master/router/linksys_wrt32x)
 - [NanoPi_R2S](https://github.com/ophub/op/tree/master/router/nanopi_r2s)
 - [NanoPi_R4S](https://github.com/ophub/op/tree/master/router/nanopi_r4s)
+- [Raspberry_Pi3](https://github.com/ophub/op/tree/master/router/raspberry_pi3)
 - [Raspberry_Pi4](https://github.com/ophub/op/tree/master/router/raspberry_pi4)
 - [X86_64](https://github.com/ophub/op/tree/master/router/x86_64)
 
