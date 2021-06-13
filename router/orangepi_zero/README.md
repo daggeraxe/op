@@ -1,6 +1,6 @@
 # OpenWrt for OrangePi Zero
 
-Support Raspberry OrangePi Zero. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_openwrt_orangePi-zero_${date}`.
+Support Raspberry OrangePi Zero. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_xunlong_orangepi-zero_${date}`.
 
 ## Compilation method
 
@@ -41,10 +41,10 @@ Support Raspberry OrangePi Zero. You can download the OpwnWrt firmware from [Rel
 
 | Option | Value |
 | ---- | ---- |
-| Target System | Broadcom BCM27xx |
-| Subtarget | BCM2711 boards (64 bit) |
-| Target Profile | Raspberry Pi 4B (64 bit) |
-| Target Images | squashfs |
+| Target System | Allwinner A1x/A20/A3x/H3/H5/R40 |
+| Subtarget | Allwinner A20/A3x/H3/R40 |
+| Target Profile | Xunlong Orange Pi Zero |
+| Target Images | ex44/squashfs |
 | LuCI -> Applications | in the file: .config |
 
 ## Firmware information

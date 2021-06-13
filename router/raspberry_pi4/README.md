@@ -1,6 +1,6 @@
 # OpenWrt for Raspberry Pi-4
 
-Support Raspberry Pi-4. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_openwrt_rpi-4_${date}`.
+Support Raspberry Pi-4. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_rpi-4_${date}`.
 
 ## Compilation method
 
@@ -44,7 +44,7 @@ Support Raspberry Pi-4. You can download the OpwnWrt firmware from [Releases](ht
 | Target System | Broadcom BCM27xx |
 | Subtarget | BCM2711 boards (64 bit) |
 | Target Profile | Raspberry Pi 4B (64 bit) |
-| Target Images | squashfs |
+| Target Images | ex44/squashfs |
 | LuCI -> Applications | in the file: .config |
 
 ## Firmware information

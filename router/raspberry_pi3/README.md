@@ -42,9 +42,9 @@ Support Raspberry Pi-3. You can download the OpwnWrt firmware from [Releases](ht
 | Option | Value |
 | ---- | ---- |
 | Target System | Broadcom BCM27xx |
-| Subtarget | BCM2711 boards (64 bit) |
-| Target Profile | Raspberry Pi 4B (64 bit) |
-| Target Images | squashfs |
+| Subtarget | BCM2710 boards (64 bit) |
+| Target Profile | Raspberry Pi 3B/3B+/3CM (64 bit) |
+| Target Images | ex44/squashfs |
 | LuCI -> Applications | in the file: .config |
 
 ## Firmware information
