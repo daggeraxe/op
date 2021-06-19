@@ -1,8 +1,8 @@
 #========================================================================================================================
 # https://github.com/ophub/op
 # Description: Automatically Build OpenWrt for Amlogic S9xxx STB
-# Function: Workflows for Build OpenWrt for Amlogic S9xxx STB
 # Cron: min (0 - 59) / hour (0 - 23) / day of month (1 - 31) / month (1 - 12) / day of week (0 - 6)(Sunday - Saturday)
+# Source code repository: https://github.com/coolsnowwolf/lede / Branch: master
 #========================================================================================================================
 
 name: Build OpenWrt for S9xxx
@@ -149,7 +149,7 @@ jobs:
       with:
         armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
         amlogic_openwrt: s905x3_s905x2_s905x_s905d_s922x_s912
-        amlogic_kernel: 5.12.11_5.4.126
+        amlogic_kernel: 5.12.12_5.4.127
         amlogic_size: 1024
 
     - name: Upload artifact to Actions
