@@ -22,7 +22,7 @@ on:
       #- 'router/orangepi_zero/.config'
       #- '.github/workflows/build-openwrt-orangepi-zero.yml'
   schedule:
-    - cron: '0 17 * * *'
+    - cron: '0 17 * * 0'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
