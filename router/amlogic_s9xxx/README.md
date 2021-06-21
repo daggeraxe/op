@@ -71,7 +71,7 @@ Tip: Functions such as install/update are provided by [luci-app-amlogic](https:/
 | Target System | QEMU ARM Virtual Machine |
 | Subtarget | QEMU ARMv8 Virtual Machine(cortex-a53) |
 | Target Profile | Default |
-| Target Images | squashfs |
+| Target Images | tar.gz |
 | LuCI -> Applications | in the file: .config |
 
 ## Firmware information
