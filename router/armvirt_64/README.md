@@ -66,7 +66,7 @@ cd /mnt/mmcblk*p4/ && chmod update*.sh && ./update*.sh
 | Target System | QEMU ARM Virtual Machine |
 | Subtarget | QEMU ARMv8 Virtual Machine(cortex-a53) |
 | Target Profile | Default |
-| Target Images | squashfs |
+| Target Images | tar.gz |
 | LuCI -> Applications | in the file: .config |
 
 ## Firmware information
