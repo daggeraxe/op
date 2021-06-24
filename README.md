@@ -77,17 +77,17 @@ On the [Action](https://github.com/ophub/op/actions) page. Select ***`Build Open
  op
  ├── .github
  │   └── workflows
- │       ├── build-openwrt-s9xxx.yml                   # Build S9xxx-Boxes firmware
+ │       ├── build-openwrt-s9xxx.yml                   # Build Amlogic S9xxx firmware
  │       ├── build-openwrt-armvirt.yml                 # Build Armvirt firmware
  │       ├── build-openwrt-linksys_wrt1900acs.yml      # Build Linksys WRT1900ACS firmware
  │       ├── build-openwrt-linksys_wrt3200acm.yml      # Build Linksys WRT3200ACM firmware
  │       ├── build-openwrt-linksys_wrt32x.yml          # Build Linksys WRT32X firmware
  │       ├── build-openwrt-nanopi_r2s.yml              # Build NanoPi-R2S firmware
  │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
- │       ├── build-openwrt-nanopi_r4s.yml              # Build NanoPi-R4S firmware
  │       ├── build-openwrt-orangepi-zero.yml           # Build OrangePi Zero firmware
  │       ├── build-openwrt-raspberry_pi-3.yml          # Build Raspberry Pi-3 firmware
  │       ├── build-openwrt-raspberry_pi-4.yml          # Build Raspberry Pi-4 firmware
+ │       ├── build-openwrt-x86_64.yml                  # Build x86_64 firmware
  │       └── delete-older-releases-artifacts.yml       # Delete older releases & artifacts
  │
  ├── router                                            # Related router Openwrt firmware codes
