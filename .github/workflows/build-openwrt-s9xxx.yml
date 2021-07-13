@@ -149,7 +149,7 @@ jobs:
       with:
         armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
         amlogic_openwrt: s905x3_s905x2_s905x_s905d_s922x_s912
-        amlogic_kernel: 5.12.15_5.4.130
+        amlogic_kernel: 5.13.1_5.10.49_5.4.131
         amlogic_size: 1024
 
     - name: Upload artifact to Actions
