@@ -28,10 +28,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-material/g' ./feeds/luci/collections/l
 
 # ------------------------------- Other started -------------------------------
 #
-# Add luci-app-ssr-plus
-svn co https://github.com/fw876/helloworld/trunk package/openwrt-ssrplus
-rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
-
 # Mydiy-luci-app-and-theme（use to /.config luci-app&theme）
 # ==========luci-app-url==========
 # git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
