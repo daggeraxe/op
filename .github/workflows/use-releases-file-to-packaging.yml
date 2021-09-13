@@ -83,7 +83,7 @@ jobs:
       with:
         armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
         amlogic_openwrt: s905x3_s905x2_s905x_s905w_s905d_s922x_s912
-        amlogic_kernel: 5.14.1_5.4.144
+        amlogic_kernel: 5.10.64_5.4.145
         auto_kernel: true
         amlogic_size: 1024
 
@@ -93,7 +93,7 @@ jobs:
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: vplus_beikeyun_l1pro_s905d_s905x3_s922x
-        KERNEL_VERSION_NAME: 5.14.1_5.4.144
+        KERNEL_VERSION_NAME: 5.10.64_5.4.145
         KERNEL_AUTO_LATEST: true
         WHOAMI: Grass
 
