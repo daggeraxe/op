@@ -145,13 +145,13 @@ jobs:
         echo "WET_URL=$(cat wetransfer.log | grep https | cut -f3 -d" ")" >> $GITHUB_ENV
 
     - name: Upload firmware to release
-      uses: softprops/action-gh-release@v1
+      uses: ncipollo/release-action@v1
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: openwrt_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
-        files: ${{ env.FILEPATH }}/*
+        tag: openwrt_${{ env.DEVICE_NAME }}_${{ env.FILE_DATE }}
+        artifacts: ${{ env.FILEPATH }}/*
+        allowUpdates: true
+        token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           This is OpenWrt firmware for ${{ env.DEVICE_NAME }}
           * Firmware information
