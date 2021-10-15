@@ -2,29 +2,35 @@
 
 Support vplus, beikeyun, l1pro, and Amlogic S9xxx STB are S905x3, S905x2, S922x, S905x, S905d, s905, s912. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_armvirt_${date}`.
 
-This OpenWrt firmware is packaged using [flippy-openwrt-actions](https://github.com/ophub/flippy-openwrt-actions) . If you like it, Please click the `Star`.
+This OpwnWrt firmware is packaged through [flippy-openwrt-actions](https://github.com/ophub/flippy-openwrt-actions) real-time call [openwrt_packit](https://github.com/unifreq/openwrt_packit) repository, and the OpwnWrt firmware completely adopts the default settings of `flippy`, He is the creator of OpenWrt for these boxes and opened up a new world for us to use OpenWrt in the series of boxes. Welcome to use `Fork` for personalized OpenWrt firmware configuration. If you like it, Please click the `Star`.
 
-## Install to Amlogic S9xxx STB EMMC and update instructions
+## OpenWrt Firmware instructions
 
-Choose the corresponding firmware according to your Amlogic S9xxx STB. Then write the IMG file to the USB hard disk through software such as [Rufus](https://rufus.ie/) or [balenaEtcher](https://www.balena.io/etcher/). Insert the USB hard disk into the Amlogic S9xxx STB. Common for all `Amlogic S9xxx STB`.
+| Model  | STB | [Optional kernel](https://github.com/ophub/flippy-kernel/tree/main/library) | OpenWrt Firmware |
+| ---- | ---- | ---- | ---- |
+| Amlogic s922x | [Belink](https://tokopedia.link/RAgZmOM41db), [Belink-Pro](https://tokopedia.link/sfTHlfS41db), [Ugoos-AM6-Plus](https://tokopedia.link/pHGKXuV41db) | All | openwrt_s922x_k*.img |
+| Amlogic s905x3 | [X96-Max+](https://tokopedia.link/uMaH09s41db), [HK1-Box](https://tokopedia.link/xhWeQgTuwfb), [H96-Max-X3](https://tokopedia.link/KuWvwoYuwfb), [Ugoos-X3](https://tokopedia.link/duoIXZpdGgb), [X96-Air](https://tokopedia.link/5WHiETbdGgb), [A95XF3-Air](https://tokopedia.link/ByBL45jdGgb) | All | openwrt_s905x3_k*.img |
+| Amlogic s905x2 | [X96Max-4G](https://tokopedia.link/HcfLaRzjqeb), [X96Max-2G](https://tokopedia.link/HcfLaRzjqeb) | All | openwrt_s905x2_k*.img |
+| Amlogic s912 | [H96-Pro-Plus](https://tokopedia.link/jb42fsBdGgb), Octopus-Planet | All | openwrt_s912_k*.img |
+| Amlogic s905d | Phicomm-N1 | All | openwrt_s905d_k*.img |
+| Amlogic s905x | [HG680P](https://tokopedia.link/HbrIbqQcGgb), [B860H](https://tokopedia.link/LC4DiTXtEib) | 5.4.* | openwrt_s905x_k*.img |
+| Amlogic s905w | [X96-Mini](https://tokopedia.link/ro207Hsjqeb), [TX3-Mini](https://www.tokopedia.com/beststereo/tanix-tx3-mini-2gb-16gb-android-7-1-kodi-17-3-amlogic-s905w-4k-tv-box) | 5.4.* | openwrt_s905w_k*.img |
+| Allwinner H6 | V-Plus-Cloud | All | openwrt_h6_vplus_k*.img |
+| Rockchip 3328 | BeikeYun, Chainedbox-L1-Pro | All | openwrt_rk3328_$soc_k*.img |
 
-### Install OpenWrt
+## Install to EMMC and update instructions
 
-- Log in to the default IP: 192.168.1.1 → `Login in to openwrt` → `system menu` → `TTYD terminal` → input command: 
+Choose the corresponding firmware according to your box. Then write the IMG file to the USB hard disk through software such as [Rufus](https://rufus.ie/) or [balenaEtcher](https://www.balena.io/etcher/). Insert the USB hard disk into the box. Common for all boxes.
 
-```yaml
-cd /root && chmod +x install*.sh && ./install*.sh
-```
+- ### Install OpenWrt
 
-### Update OpenWrt firmware
+Log in to the default IP: 192.168.1.1 → `Login in to openwrt` → `system menu` → `Amlogic Service` → `Install OpenWrt`
 
-Put the `OpenWrt update file` and `update*.sh` in the `/mnt/mmcblk*p4/` directory.
+- ### Update OpenWrt
 
-- Log in to the default IP: 192.168.1.1 →  `Login in to openwrt` →  `system menu` → `TTYD terminal` → input command: 
+Log in to the default IP: 192.168.1.1 →  `Login in to openwrt` → `system menu` → `Amlogic Service` → `Update OpenWrt`
 
-```yaml
-cd /mnt/mmcblk*p4/ && chmod update*.sh && ./update*.sh
-```
+Tip: Functions such as install/update are provided by [luci-app-amlogic](https://github.com/ophub/luci-app-amlogic) to provide visual operation support. Also supports the use of script commands.
 
 ## Compilation method
 
