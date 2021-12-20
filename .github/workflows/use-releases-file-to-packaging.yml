@@ -14,8 +14,6 @@ on:
         description: 'Package repo: ophub / flippy'
         required: false
         default: 'ophub'
-  #schedule:
-    #- cron: '0 22 * * *'
 
 env:
   UPLOAD_FIRMWARE: false
