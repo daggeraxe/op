@@ -1,6 +1,6 @@
 # OpenWrt for Amlogic s9xxx tv box
 
-Support `github.com One-stop compilation`, `Use GitHub Action to packaging`, `Use github.com Releases rootfs file to packaging`, `Local packaging`. including OpenWrt firmware install to EMMC and update related functions. Support Amlogic s9xxx tv box are ***`s922x, s905x3, s905x2, s912, s905d, s905x, s905w`***, etc. such as ***`Belink GT-King, Belink GT-King Pro, UGOOS AM6 Plus, X96-Max+, HK1-Box, H96-Max-X3, Phicomm-N1, Octopus-Planet, Fiberhome HG680P, ZTE B860H`***, etc.
+Support Amlogic s9xxx tv box are ***`s922x, s905x3, s905x2, s912, s905d, s905x, s905w, s905`***, etc. such as ***`Belink GT-King, Belink GT-King Pro, UGOOS AM6 Plus, X96-Max+, HK1-Box, H96-Max-X3, Phicomm-N1, Octopus-Planet, Fiberhome HG680P, ZTE B860H`***, etc.
 
 The latest version of the OpenWrt firmware can be downloaded in [Releases](https://github.com/ophub/op/releases). Such as openwrt_s9xxx_${date}.
 
@@ -8,15 +8,18 @@ This OpenWrt firmware is packaged using `Flippy's` Amlogic S9xxx Kernel for Open
 
 ## OpenWrt Firmware instructions
 
-| Model  | BOX | [Optional kernel](https://github.com/ophub/flippy-kernel/tree/main/library) | OpenWrt Firmware |
+| Model  | BOX | [Optional kernel](https://github.com/ophub/kernel/tree/main/pub/stable) | OpenWrt Firmware |
 | ---- | ---- | ---- | ---- |
 | s922x | [Belink](https://tokopedia.link/RAgZmOM41db), [Belink-Pro](https://tokopedia.link/sfTHlfS41db), [Ugoos-AM6-Plus](https://tokopedia.link/pHGKXuV41db), [ODROID-N2](https://www.tokopedia.com/search?st=product&q=ODROID-N2) | All | openwrt_s922x_k*.img |
 | s905x3 | [X96-Max+](https://tokopedia.link/uMaH09s41db), [HK1-Box](https://tokopedia.link/xhWeQgTuwfb), [H96-Max-X3](https://tokopedia.link/KuWvwoYuwfb), [Ugoos-X3](https://tokopedia.link/duoIXZpdGgb), [X96-Air](https://tokopedia.link/5WHiETbdGgb), [A95XF3-Air](https://tokopedia.link/ByBL45jdGgb) | All | openwrt_s905x3_k*.img |
 | s905x2 | [X96Max-4G](https://tokopedia.link/HcfLaRzjqeb), [X96Max-2G](https://tokopedia.link/HcfLaRzjqeb) | All | openwrt_s905x2_k*.img |
 | s912 | [H96-Pro-Plus](https://tokopedia.link/jb42fsBdGgb), Octopus-Planet | All | openwrt_s912_k*.img |
+| s905 | [Beelink MiniMX](https://www.gearbest.com/tv-box-mini-pc/pp_321409.html), [MXQ PRO+](https://www.gearbest.com/tv-box-mini-pc/pp_354313.html) | All | openwrt_s905_k*.img |
 | s905d | Phicomm-N1 | All | openwrt_s905d_k*.img |
 | s905x | [HG680P](https://tokopedia.link/HbrIbqQcGgb), [B860H](https://tokopedia.link/LC4DiTXtEib) | 5.4.* | openwrt_s905x_k*.img |
 | s905w | [X96-Mini](https://tokopedia.link/ro207Hsjqeb), [TX3-Mini](https://www.tokopedia.com/beststereo/tanix-tx3-mini-2gb-16gb-android-7-1-kodi-17-3-amlogic-s905w-4k-tv-box) | 5.4.* | openwrt_s905w_k*.img |
+
+💡Tip: The current box of ***`s905`*** can only be used in `TF/SD/USB`, and other types of boxes can also be used in `EMMC` at the same time.
 
 ## Install to EMMC and update instructions
 
@@ -46,26 +49,6 @@ Tip: Functions such as install/update are provided by [luci-app-amlogic](https:/
 | feeds.conf.default | Just put the feeds.conf.default file into the root directory of the warehouse, it will overwrite the relevant files in the OpenWrt source directory. |
 | diy-part1.sh | Execute before updating and installing feeds, you can write instructions for modifying the source code into the script, such as adding/modifying/deleting feeds.conf.default. |
 | diy-part2.sh | After updating and installing feeds, you can write the instructions for modifying the source code into the script, such as modifying the default IP, host name, theme, adding/removing software packages, etc. |
-
-## .github/workflow/*.yml related environment variable description
-
-| Environment variable | Features |
-| ---- | ---- |
-| REPO_URL | Source code warehouse address |
-| REPO_BRANCH | Source branch |
-| FEEDS_CONF | Custom feeds.conf.default file name |
-| CONFIG_FILE | Custom .config file name |
-| DIY_P1_SH | Custom diy-part1.sh file name |
-| DIY_P2_SH | Custom diy-part2.sh file name |
-| UPLOAD_BIN_DIR | Upload the bin directory (all ipk files and firmware). Default false |
-| UPLOAD_FIRMWARE | Upload firmware catalog. Default true |
-| UPLOAD_RELEASE | Upload firmware to release. Default true |
-| UPLOAD_COWTRANSFER | Upload the firmware to CowTransfer.com. Default false |
-| UPLOAD_WERANSFER | Upload the firmware to WeTransfer.com. Default failure |
-| RECENT_LASTEST | maximum retention days for release, artifacts and logs in GitHub Release and Actions. |
-| TZ | Time zone setting |
-| GITHUB_REPOSITORY | Github.com Environment variables. The owner and repository name. For example, ophub/op. |
-| secrets.GITHUB_TOKEN | Personal center: Settings → Developer settings → Personal access tokens → Generate new token ( Name: GITHUB_TOKEN, Select: public_repo ). |
 
 ## Firmware compilation parameters
 
