@@ -16,6 +16,8 @@ This OpwnWrt firmware is packaged through [flippy-openwrt-actions](https://githu
 | s905d | Phicomm-N1 | All | openwrt_s905d_k*.img |
 | s905x | [HG680P](https://tokopedia.link/HbrIbqQcGgb), [B860H](https://tokopedia.link/LC4DiTXtEib) | 5.4.* | openwrt_s905x_k*.img |
 | s905w | [X96-Mini](https://tokopedia.link/ro207Hsjqeb), [TX3-Mini](https://www.tokopedia.com/beststereo/tanix-tx3-mini-2gb-16gb-android-7-1-kodi-17-3-amlogic-s905w-4k-tv-box) | 5.4.* | openwrt_s905w_k*.img |
+| Allwinner H6 | V-Plus-Cloud | All | openwrt_h6_vplus_k*.img |
+| Rockchip 3328 | BeikeYun, Chainedbox-L1-Pro | All | openwrt_rk3328_$soc_k*.img |
 
 💡Tip: The current box of ***`s905`*** can only be used in `TF/SD/USB`, and other types of boxes can also be used in `EMMC` at the same time.
 
