@@ -1,6 +1,6 @@
 # OpenWrt Firmware
 
-The latest version of the OpenWrt firmware can be downloaded in [Releases](https://github.com/ophub/op/releases). For detailed information about each firmware, please refer to the README.md file of each model. The currently supported router models are: 
+The latest version of the OpenWrt firmware can be downloaded in [Releases](https://github.com/ophub/op/releases). For detailed information about each firmware, please refer to the README.md file of each model. The currently supported router models are:
 
 - [Amlogic_s9xxx](https://github.com/ophub/op/tree/master/router/amlogic_s9xxx)
 - [Armvirt_64](https://github.com/ophub/op/tree/master/router/armvirt_64)
@@ -91,13 +91,13 @@ Just put the `feeds.conf.default` file into the root directory of the warehouse,
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
- │   │   └── README.md 
+ │   │   └── README.md
  │   │
  │   ├── armvirt_64                                    # Armvirt 64 related code files
  │   │   ├── .config
  │   │   ├── diy-part1.sh
  │   │   ├── diy-part2.sh
- │   │   └── README.md  
+ │   │   └── README.md
  │   │
  │   ├── linksys_wrt1900acs                            # Linksys WRT1900ACS related code files
  │   │   ├── .config                                   # config luci-app, luci-theme and other
@@ -155,7 +155,7 @@ Just put the `feeds.conf.default` file into the root directory of the warehouse,
  │
  ├── LICENSE                                           # LICENSE for OP
  └── README.md                                         # README for OP
-   
+
 ```
 
 ## Acknowledgments
@@ -167,4 +167,4 @@ Just put the `feeds.conf.default` file into the root directory of the warehouse,
 
 ## License
 
-[LICENSE](https://github.com/ophub/op/blob/main/LICENSE) © OPHUB
+The op © OPHUB is licensed under [GPL-2.0](https://github.com/ophub/op/blob/main/LICENSE)
