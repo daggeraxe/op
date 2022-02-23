@@ -1,8 +1,8 @@
 # OpenWrt for Armvirt 64
 
-Support vplus, beikeyun, l1pro, and Amlogic s9xxx tv box are a311d, s922x, s905x3, s905x2, s912, s905d, s905x, s905w, s905. You can download the OpwnWrt firmware from [Releases](https://github.com/ophub/op/releases). Such as `openwrt_armvirt_${date}`.
+Support vplus, beikeyun, l1pro, and Amlogic s9xxx tv box are ***`a311d, s922x, s905x3, s905x2, s912, s905d, s905x, s905w, s905`***, etc. such as ***`Belink GT-King, Belink GT-King Pro, UGOOS AM6 Plus, X96-Max+, HK1-Box, H96-Max-X3, Phicomm-N1, Octopus-Planet, Fiberhome HG680P, ZTE B860H`***, etc.
 
-This OpwnWrt firmware is packaged through [flippy-openwrt-actions](https://github.com/ophub/flippy-openwrt-actions) real-time call [openwrt_packit](https://github.com/unifreq/openwrt_packit) repository, and the OpwnWrt firmware completely adopts the default settings of `flippy`, He is the creator of OpenWrt for these boxes and opened up a new world for us to use OpenWrt in the series of boxes. Welcome to use `Fork` for personalized OpenWrt firmware configuration. If you like it, Please click the `Star`.
+This OpwnWrt firmware is packaged through [flippy-openwrt-actions](https://github.com/ophub/flippy-openwrt-actions) real-time call [openwrt_packit](https://github.com/unifreq/openwrt_packit) repository, and the OpwnWrt firmware completely adopts the default settings of `flippy`, The latest version of the OpenWrt firmware can be downloaded in [Releases](https://github.com/ophub/op/releases). Such as openwrt_armvirt_${date}. Welcome to use `Fork` for personalized OpenWrt firmware configuration. If you like it, Please click the `Star`.
 
 ## OpenWrt Firmware instructions
 
@@ -20,7 +20,7 @@ This OpwnWrt firmware is packaged through [flippy-openwrt-actions](https://githu
 | Allwinner H6 | V-Plus-Cloud | All | openwrt_h6_vplus_k*.img |
 | Rockchip 3328 | BeikeYun, Chainedbox-L1-Pro | All | openwrt_rk3328_$soc_k*.img |
 
-💡Tip: The current box of ***`s905`*** can only be used in `TF/SD/USB`, and other types of boxes can also be used in `EMMC` at the same time. The ***`s905w`*** boxs currently only support `5.4` kernels, Cannot use kernel version 5.10 and above, Other devices can be freely selected.
+💡Tip: The current box of ***`s905`*** can only be used in `TF/SD/USB`, and other types of boxes can also be used in `EMMC` at the same time. The ***`s905w`*** boxs currently only support `5.4` kernels, Cannot use kernel version 5.10 and above, Other devices can be freely selected. Please refer to the [instructions](https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/build-armbian/amlogic-u-boot/README.md) for dtb and u-boot of each device.
 
 ## Install to EMMC and update instructions
 
