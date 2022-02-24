@@ -99,7 +99,7 @@ jobs:
       with:
         armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
         amlogic_openwrt: s922x_s905x3_s905d_s912
-        amlogic_kernel: 5.10.100_5.4.180
+        amlogic_kernel: 5.15.25_5.4.180
 
     - name: Upload OpenWrt Firmware to Release
       uses: ncipollo/release-action@v1
